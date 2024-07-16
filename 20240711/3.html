@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{height: 100vh;}
+        #container{width: 600px; height: 300px; border: 2px solid lightgray; display: flex; justify-content: space-between; align-items: center; background-size: cover;}
+        .arrow{z-index: 100; font-size: 2em; padding: 10px; background-color: lightgray; opacity: 0.2;}
+        .arrow:hover{cursor: pointer; opacity: 1;}
+    </style>
+</head>
+<body>
+    <h3>다른 이미지를 보려면 좌우 화살표를 눌러보세요</h3>
+    <div id="container">
+        <div class="arrow" id="left">&lang;</div>
+        <div class="arrow" id="right">&rang;</div>
+    </div>
+
+    <script>
+        const container=document.querySelector("#container")
+        const pics=[`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`];
+
+        container.style.backgroundImage=`url(images/${pics[0]})`;
+        const arrows=document.querySelectorAll(".arrow");
+        let i=0;
+
+        arrows.forEach(arrow=>{
+            arrow.addEventListener("click",(e)=>{
+              if(e.target.id === "left"){
+                 i--;
+                if (i<0) {
+                    i=pics.length -1;}}
+
+        else if(e.target.id === "right"){
+        i++
+        if(i>=pics.length){
+        i=0;}}
+        container.style.backgroundImage=`url(images/${pics[i]})`;
+        });
+        });
+
+        
+    </script>
+</body>
+</html>

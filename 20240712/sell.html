@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contents"> <img src="" alt=""> 
+    <form>
+        <ul>
+            <li><label for="oPrice">원래가격
+                <input type="text" id="oPrice">
+            </label>
+            </li>
+            <li><label for="rate">할인율
+                <input type="text" id="rate">%
+            </label>
+            <button onclick="showPrice"> 할인 가격 계산하기 </button>
+        </ul>
+    </form></div>
+    <div class="showResult">
+        
+    </div>
+
+    <script>
+        function showPrice(){
+            event.preventDefault(); //새로고침 방지
+            let oPrice=document.getElementById('oPrice').value;
+            let rate=document.getElementById('rate').value;
+
+            let savedPrice=originPrice=(rate/100)
+            let resultPrice
+
+            if(){
+                document.querySelector('.showResult').innerHTML='출력내용'; return
+            }
+            
+            let discountedPrice=oPrice-discount
+
+            document.querySelector('.showResult').innerHTML='할인가격: ${discountedPrice.toLocaleString()}원'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> event 객체를 함수의 인수로 사용한다. </p>
+    <img src="../images/1.jpg" alt="" id="pic">
+
+    <script>
+        let $pic=documnet.querySelctor("#pic");
+        $pic.onclick=function(event){alert("이벤트 유형:" +event.type+", 이벤트 발생 위치:" +event.pageX+","+event.padeY");
+        alert("클릭 이미지 파일:" +this.scr);}
+    </script>
+</body>
+</html>

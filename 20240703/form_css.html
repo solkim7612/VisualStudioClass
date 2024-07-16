@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문서 작성하기</title>
+    <style>
+        .container{width: 600px; margin: 0 auto;}
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        fieldset {
+            margin: 15px 10px;
+        }
+
+        legend {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .centered {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>상품 주문서</h2>
+        <form action="">
+            <fieldset>
+                <legend>개인 정보</legend>
+                <ul>
+                    <li><label for="name">이름</label>
+                        <input type="text" id="nemae" placeholder="여백없이 입력" required>
+                    </li>
+                    <li><label for="tell">연락처</label><input type="text" id="tell" placeholder="연락 가능한 번호"></li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>배송지 정보</legend>
+                <ul>
+                    <li><label for="addr">주소</label><input type="text" size="40" id="addr" required></li>
+                    <li><label for="tel2">전화번호</label><input type="tell" id="tel2" required></li>
+                    <li><label for="comment">메모<textarea name="" id="comment" cols="40" rows="3"></textarea></label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>주문 정보</legend>
+                <ul>
+                    <li><label>
+                            <ul>
+                                <li><input type="checkbox">커피원두1(100g)
+                        </label><label><input type="number" value="0" min="0" max="5">개</label></li>
+                    <li><label><input type="checkbox">커피원두2(100g)</label><label><input type="number" value="0" min="0"
+                                max="5">개</label></li>
+                    <li><label><input type="checkbox">커피원두3(100g)</label><label><input type="number" value="0" min="0"
+                                max="5">개</label></li>
+                </ul>
+            </fieldset>
+            <div class="centered"><input type="submit" value="주문하기"><input type="reset" value="다시 작성"></div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- div :묶음 -->
+<!-- class A: 이름 A -->
+<!-- style +A : A의 style 변경-->
+
+<!-- px: 고정값 -->
+<!-- em: 비율-->

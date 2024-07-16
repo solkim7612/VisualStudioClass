@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;} 
+        section{width: 1000px; border: dashed 10px red; overflow: hidden; margin: 0;}
+        ul{width: 4000px; height: 350px; animation: slideani 8s infinite ease-in-out; position: relative;} 
+        li{width: 1000px; height: 350px;}
+        li:nth-child(1){background: url(../images/1.jpg); background-size: cover;}
+        li:nth-child(2){background: url(../images/2.jpg); background-size: cover;}
+        li:nth-child(3){background: url(../images/3.jpg); background-size: cover;}
+        li:nth-child(4){background: url(../images/4.jpg); background-size: cover;}
+
+        @keyframes slideani {0%{left: 0;} 25%{left: -1000px;} 50%{left: -2000px;} 75%{left: -3000px;} 100%{left: 0px;}}
+/*overflow: hidden 오버사이즈 안보이게*/
+</style>
+</head>
+<body>
+    <section>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+</html>

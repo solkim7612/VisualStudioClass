@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: rgb(105, 93, 93);
+    font-size: 14px;
+}
+#logo_img {
+    margin-left: 70px;
+    width: 33px;
+    height: 33px;
+}
+header {
+    width: 100%;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: white;
+    border-top: 2px solid salmon;
+    border-bottom: 2px solid salmon;
+}
+.header_ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+li {
+    font-weight: bold;
+    text-align: center;
+}
+a:hover {
+    color: blue;
+}
+main {
+    background-image: url(https://res.heraldm.com/phpwas/restmb_idxmake.php?idx=507&simg=/content/image/2019/10/25/20191025000072_0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    font-weight: 300;
+}
+h4 {
+    position: relative;
+    left: 50px;
+    top: 480px;
+    color: white;
+    width: 80%;
+}
+.main_text {
+    position: relative;
+    font-size: 3em;
+    top: 490px;
+    left: 50px;
+    color: white;
+    letter-spacing: -5px;
+    width: 80%;
+}
+button {
+    background-color: rgb(61, 139, 187);
+    color: white;
+    position: relative;
+    width: 160px;
+    height: 45px;
+    border: none;
+    top: 500px;
+    left: 55px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110px;
+}
+
+p {
+    position: relative;
+    left: 60px;
+    font-weight: 700;
+    margin-top: 15px;
+    color: rgb(105, 93, 93);
+    width: 80%;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    left: 50px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.footer_img {
+    width: 22px;
+    height: 22px;
+    margin: 0 8px;
+    background-color: rgb(229, 235, 235);
+}
+
+.menu {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    width: 140px;
+    padding: 10px 0 10px 20px;
+}
+
+.list {
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+}
+
+#list1:hover #menu1 {
+    display: block;
+    text-align: left;
+    margin: 10px 30px 0 0;
+}
+
+.box {
+    margin: 10px 0;
+}
+
+#list2:hover #menu2 {
+    display: block;
+    text-align: left;
+    margin: 10px 30px 0 0;
+}
+
+#list3:hover #menu3 {
+    display: block;
+    text-align: left;
+    margin: 10px 30px 0 0;
+    width: 80px;
+}

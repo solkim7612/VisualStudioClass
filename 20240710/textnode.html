@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트노드추가</title>
+    <style>
+        p{background-color: lightpink;}
+    </style>
+</head>
+<body>
+    <h1>노트 리스트</h1>
+    <pre>텍스트 노드 추가하기.
+        DOM에 새로운 요소를 추가할 때는 
+        가장먼저 요소 노드를 만들어야 한다.
+
+        1.요소 노드 만들기 createElemnt()
+        2.텍스프 노드 만들기 createTextNode()
+        3.자식노드 연결하기 appendChild() <!-- append 추가 -->
+    </pre>
+
+    <script>
+        //1.요소 노드 만들기 createElemnt()에서도 
+        let newP=document.createElement("p");
+        //2.텍스트 노드 만들기 createTextNode(
+        let textNode=document.createTextNode("추가될 내용 부분")
+        //3.자식 노드 연결하기 appendChild()
+        newP.appendChild(textNode);
+        //p요소 노드를 body 노드의 자식 노드로 추가
+        document.body.appendChild(newP);
+    </script>
+</body>
+</html>

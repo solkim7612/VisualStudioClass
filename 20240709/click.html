@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 이벤트</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div id="item">
+        <img src="../images/4.jpg" alt="" width="300px"><br>
+        <button onclick="showDetail()" id="open">상세 설명 보기</button>
+        <div id="desc">
+            <h4>우주란</h4>
+            <p>우주에 대해서 뭐라뭐라뭐란ㄹ;ㅁ널;ㅁㄴ럼ㄴ;이만ㅇ;멍ㄴㄹ;닌 ㅣ니ㅓ닝;ㅣㅇ;ㄴㅇ</p>
+            <button onclick="hideDetail()" id="close">상세 설명 닫기</button>
+        </div>
+    </div>
+
+    <script>
+        function showDetail()
+        {document.querySelector('#desc').style.display="block";
+        document.querySelector('#open)').style.display="none"}
+
+        function hideDetail()
+        {document.querySelector('#desc').style.display="none";
+        document.querySelector('#close').style.display="block";
+        document.querySelector('#open').style.display="block"}
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1~10까지 합 구하기</title>
+</head>
+<body>
+    <h2>1~10까지 합</h2>
+    <script>
+        //첫번째 방법
+        // alert(1+2+3+4+5+6+7+8+9+10); 
+
+
+        //두번째 방법
+        // let a=1;
+        // let b=2;
+        // let c=3;
+        // let d=4;
+        // let e=5;
+        // let f=6;
+        // let g=7;
+        // let h=8;
+        // let i=9;
+        // let j=10;
+
+        // let a=1
+        // let sum;
+        //sum=a+b+c+d+e+f+g+h+i+j;
+
+
+        //세번째 방법(반복문)
+        // let a=1;
+        // let sum=0
+
+        // sum=sum+a;
+        
+        // a=a+1
+        // sum=sum+a; //a=2,sum=3
+
+        // a=a+1;
+        // sum=sum+a; //a=3, sum=6
+
+        // a=a+1;
+        // sum=sum+a; //a=4, sum=10
+
+        // a=a+1;
+        // sum=sum+a; //a=5, sum=15
+
+        // a=a+1;
+        // sum=sum+a; //a=6,sum=21
+
+        // a=a+1;
+        // sum=sum+a; //a=7,sum=28
+
+        // a=a+1;
+        // sum=sum+a; //a=8,sum=36
+
+        // a=a+1;
+        // sum=sum+a; //a=9, sum=45
+
+        // a=a+1;
+        // sum=sum+a; //a=10,sum=55
+
+
+        //네번째 방법
+        // let a=0;
+        // let sum=0;
+
+        // for(let i=1; i<=10; i++){ //선언, 조건식, 반복후작업
+        //     a=a+1;
+        //     sum=sum+a;
+        // }
+        // alert(sum);
+
+
+        let sum=0;
+
+        for(let i=1; i<=10; i++){
+            sum=sum+i;
+        }
+        alert(sum);
+
+    </script>
+</body>
+</html>

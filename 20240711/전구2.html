@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> addEventListener</p>
+
+    <img src="../images/back.png" alt="">
+    <button id="open">켜기</button>    
+    <button id="close">끄기</button>
+    
+    <script>
+        let myImage=document.getElementById("mtImage")
+        let open=document.getElementById("close")
+        let close=document.getElementById("close")
+
+        open.onclick=changePic1;
+        close.onclick=changePic2;
+
+        function changePic1(){
+            myImage.src="../images/spade-7.png"
+        }
+    </script>
+</body>
+</html>

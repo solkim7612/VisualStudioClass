@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //const 상수: 변하지 않는 상수 입력
+        //var(let 2015년~) 변수선언 
+        const currentYear=2024;
+        let birthYear;
+        let age;
+        let name;
+        
+        name=prompt("이름을 입력하세요.")
+        birthYear=prompt("태어난 연도를 입력하세요.(YYYY)")
+        age=currentYear-birthYear;
+        document.write(currentYear+"년 현재<br>");
+        document.write(name+"님," +birthYear+"년에 태어난 사람의 나이는" +age+"세 입니다.")
+
+    </script>
+</body>
+</html>

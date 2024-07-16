@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tooltip-content{background-color: orange; margin: 10px, 0; text-align: center; visibility: hidden; width: 400px; width: 400px; padding: 10px,0;} 
+        .tooltip:hover .tooltip-content{visibility: visible;}
+        
+        span{color: red;}
+    </style>
+</head>
+<body>
+    <h1>툴팁 효과 visibilty </h1> 
+    <p>속성은 화면에서 감추기만 할 뿐<br> 원래 요소가 이는 공간은 그대로 차지하지만, <br> display:none; 은 아예 공간조차 차지하지 않는다. (display: block)</p>
+
+    <div class="tooltip">
+        <span>
+            여기에 마우스를 올려보세요
+        </span>
+        <div class="tooltip-content"> <p>마우스를 올려야 나타나는 툴팁 부분</p></div>
+    </div>
+   
+
+</body>
+</html>

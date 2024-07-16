@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static{background-color: blanchedalmond; width: 300px; height: 200px; position: static;}
+        .relative1{background-color: lightcoral; width: 300px; height: 200px; position: relative;}
+        .relative2{background-color:lightgreen; width: 300px; height: 200px; position: relative; left: 100px; top: -50px;}
+        .fixed{background-color: lightblue; width: 300px; height: 200px; position: fixed; right: 100px; bottom: 100px;}
+        .sticky{background-color: lightseagreen; width: 300px; height: 200px; position: sticky; top: 5px;}
+    </style>
+</head>
+<body>
+    <div class="static">박스1</div>
+    <div class="relative1">박스2</div>
+    <div class="relative2">박스3</div>
+    <div class="fixed">박스4</div>
+    <div class="sticky">박스5</div>
+
+</body>
+</html>
+
+<!-- position: absolute; : left/right/top/bottom(x,y) -->
+<!-- position: relative; left/right/top/bottom : 앞선 relative 기준 (x,y) 이동 -->
+
+<!-- position: sticky; top : 브라우저 top을 기준으로 고정 -->
+<!-- position: fixed; left/right/top/bottom : 브라우저 기준 고정-->

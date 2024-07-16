@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{background-color: aquamarine; color: blue;}
+        #innerH{width: 300px; height: 200px; border: dashed 5px purple; margin-bottom: ;}
+    </style>
+</head>
+<body>
+    <h2>innerHTML을 써봅시다.</h2>
+    <div id="innerH"></div>
+    <button onclick="subway()">Subway버튼</button>
+    <button onabort="bus()">Bus버튼</button>
+
+    <script>
+        function subway(){
+            let name="subway";
+            let city="홍대역";
+            console.log(name+city);
+            document.getElementById('innerH').innerHTML=(name+city)
+        }
+    </script>
+</body>
+</html>

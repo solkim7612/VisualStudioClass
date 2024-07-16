@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알림메세지</title>
+    <style>
+        body{display: flex; justify-content: center; align-items: center; height: 100vh;}
+        button{background-color: yellow; font-weight: bold; border: 5px dashed green; width: 150px; height: 150px; border-radius: 50%; box-shadow: 3px 3px 3px gray; }
+        #notebox{position: fixed; top: 20px; right: 20px;} 
+    </style>
+</head>
+<body>
+    <div id="notebox"></div>
+    <button id="btn">알림<br>메세지!</button>
+
+    <script>
+        const btn =document.querySelector("#btn")
+        const notebox=document.querySelector("#notebox")
+
+        btn.addEventListener('click', () => {
+            const note=document.createElement("div");
+            note.classList.add("note");
+            note.innerText="팝업으로 띄울 내용";
+            notebox.appendChild(note);
+            
+            setTimeout( ()=>{
+                note.remove () ;
+            }, 3000)
+
+            function greeting(){
+                console.log("안녕하세요");
+            }
+
+            const intervalId = setInterval(greeting, 2000);
+            
+            // clearInterval(intervalId) 호출 위치 수정
+            setTimeout(() => {
+                clearInterval(intervalId);
+            }, 10000); // 10초 후에 인사 메시지 반복을 멈춤
+        });
+            
+            
+    </script>
+</body>
+</html>

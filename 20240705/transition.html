@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+
+        .box1{transition-property: width, height; transition-delay: 1s; transition-duration: 2s,1s; }
+        .box1:hover{width: 400px; height: 400px;}
+
+        .box2{transition: 2s ease-in-out;}
+        .box2:hover{width: 350px; height: 350px; background-color: aqua; transform: rotate(270deg);}
+        
+        #ex div{width: 100px; height: 50px; margin: 5px 10px; background-color:blanchedalmond; border-radius: 5px; text-align: center; display: inline-block;}
+        #ex:hover div{height: 400px;}
+        #ex.ease{transition: 3s ease;}
+</style>
+
+</head>
+
+<body>
+    <h2> 트랜지션 전환 244p </h2>
+    <p> 웹 요소의 배경색이 바뀌거나 도형의 테두리가 원형으로 바뀌는 등 <mark> 스타일 속성</mark>이 바뀌는 것을 말합니다. <br>
+        값의 변화를  </p>
+    <div class="box1">
+
+    </div>
+
+    <div class="box2">
+
+    </div>
+
+    <h2>transition-timing-fuction 속도 곡선 속성 값</h2>
+    <div id="ex">
+        <div class="ease"> ease 기본값 </div>
+        <div class="linear"> linear </div>
+        <div class="ease"> ease 기본값 </div>
+        <div class="ease"> ease 기본값 </div>
+        <div class="ease"> ease 기본값 </div>
+
+    </div>
+</body>
+</html>

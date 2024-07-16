@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 노드 추가하기</title>
+</head>
+<body>
+    <h1>웹 문서에 새로운 이미지 노드 추가하기</h1>
+    <pre>속성 값이 있는 노드 추가하기. 
+        img 태그뿐만 아니라 태그 안의 속성인 src 속성도 넣어줘야 한다. 
+        HTML 태그를 만들 때는 관련된 속성 노드도 함께 만들어서 자식 노드로 연결해야 한다. 
+        
+        1. img 태그 요소 노드 만들기 createElement()
+        2. 속성 노드 만들기 createAttribute()
+        3. 속성 노드 연결하기 setAttributeNode() 또는 setAttribute()
+        4. 자식 노드 연결하기 appendChild()
+    </pre>
+
+    <script>
+        let newImg = document.createElement("img");
+        let srcNode = document.createAttribute("src");
+        srcNode.value = "../images/1.jpg"; // 이미지 경로를 올바르게 설정합니다.
+        newImg.setAttributeNode(srcNode);
+        // 또는 더 간단하게 setAttribute 사용
+        // newImg.setAttribute("src", "../images/1.jpg");
+        document.body.appendChild(newImg);
+    </script>
+</body>
+</html>

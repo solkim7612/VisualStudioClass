@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label,input{display: inline-block; cursor: pointer;}
+        label:hover{color: blueviolet; transform: scale(1.05);}
+
+        .box{width: 300px; height: 300px; border-radius: 50%; background-color: aquamarine; font-size: 30px; line-height: 300px; margin: 100px auto; color: blue; text-align: center; }
+        
+        #matrixDefault:checked~ .box{transform: matrix(1,0,0,1,0,0);}
+        #matrixScale:checked~ .box{transform: matrix(1.5,0,0,1.5,0,0);}
+        #matrixSkew:checked~ .box{transform: matrix(1,1.2,0.5,1,0,0);}
+        #matrixTranslate:checked~ .box{transform:matrix(1,0,0,1,300,2)}
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <input type="radio" name="matrix" id="matrixDefault">
+        <label for="matrixDefault">matrixDefault(초기화)</label>
+
+        <input type="radio" name="matrix" id="matrixScale">
+        <label for="matrixScale">matrixScale(중효과)</label>
+
+        <input type="radio" name="matrix" id="matrixSkew">
+        <label for="matrixSkew">matrixSkew(기울기)</label>
+
+        <input type="radio" name="matrix" id="matrixTranslate">
+        <label for="matrixTranslate">matrixTranslate(이동효과)</label>
+    </div>
+
+    <div class="box">
+        matrix
+    </div>
+</body>
+</html>

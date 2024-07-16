@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //variable 변수
+       //문자형 "string"
+       var a ="javascript"; 
+       var num = "100";
+       var tag = "<h1>string</h1>"; 
+       console.log(a); 
+       console.log(num); 
+       console.log(tag); 
+       document.write(typeof(a)); 
+       document.write(num); 
+       document.write(tag)
+
+       //숫자형 number
+       var s = 100;
+       var t = Number("500")
+       console.log(s);
+       console.log(typeof(s));
+       console.log(typeof(t));
+
+       //논리형 Boolean (참,거짓)
+       var y =true
+       var t = 10>=100;
+       var k = Boolean("hello")
+       console.log(y);
+       console.log(t);
+       console.log(k);
+       var m = Boolean(0);
+       var l = Boolean(15);
+       console.log(m);
+       console.log(l);
+
+       
+       //null 데이터값이 유효하지 않은 상태(값이 비어있다)
+
+       //어떤 자료형인지 알고 싶을때
+       var num = 100;
+       var str = "자바스크립트"
+       console.log(typeof num);
+       console.log(typeof str);
+       document.write(typeof num, "<b>r");
+       document.write(typeof str, "<br><br><br>");
+       
+       //연산자 var=let
+       var num1 = 15;
+       var num2 = 2;
+       var result = num1+num2;
+       document.write(result, "<br>");
+       result = num1-num2;
+       document.write(result, "<br>")
+       result = num1/num2;
+       document.write(result, "<br>")
+       result = num1 % num2; //나누기 중 나머지
+       document.write(result, "<br>")
+
+       //문자 결합 연산자
+       var t1 = "동해물과";
+       var t2= "백두산이";
+       var t3=1234;
+       var t4="마르고 닳도록";
+       var result=t1+t2+t3+t4;
+       document.write(result +'<br><br><br>')
+
+       //복합 연산자= 산술+대입
+        var num1=10;
+        var num2=3;
+        num1+=num2; //=num1+num2
+        document.write(num1, "<br>");
+        num1-=num2;
+        document.write(num1, "<br>")
+        num1*=num2;
+        document.write(num1, "<br>")
+        num1%=num2;
+        document.write(num1, "<br>")
+        
+        //복합 연산자 표만들기
+        var str="<table border=1>"; 
+            str+="<tr>";
+            str+="<td>1</td>"
+            str+="<td>2</td>"
+            str+="<td>3</td></tr></table>"
+            document.write(str);
+
+        //비교 연산자 == true,false 여부/ === +문자형,숫자형 여부
+        var ko=10, mo="10"
+        ko==10; //true 
+        mo==10; //true 
+        
+        ko===10; //true 
+        mo===10; //false
+
+    </script>
+
+    <h3>링크의 href 에 자바스크립트 작성 263p</h3><hr>
+    <a href="javascript:alert('클릭하셨어요?')">클릭해보세요</a>
+
+    <script>
+        document.write("<h3>Welcome!</h3>")
+        document.write("2+5는 <br>")
+        document.write("<mark>7입니다.</mark>")
+    </script>
+
+</body>
+</html>

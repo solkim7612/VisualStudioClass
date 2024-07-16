@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{width: 200px; height: 2-0px; }
+        .pic1{display: block;}
+        .pic2{display: none;}
+        .pic1.active{display: none; }
+        .pic2.active{display: block; }
+    </style>
+</head>
+<body>
+    <img src="https://i.namu.wiki/i/l0x04r27DjSQmS-WgYk6I5x6IkKMyvZjRMyK5dI3EMoMikzCd2Kfl2SMRdvL3-y4zpxI_qLP-fs3QToSR7AU3g.webp" alt="" class="pic1">
+    <img src="https://i.namu.wiki/i/mvvAWTG9d1COGX8I8pKpEajXZRZsFvA6fjgW0uWicVT1ZeVAFrnRguF5E0-7NfTvXS-JAD1CR68xA1BIu-MNoQ.webp" alt="" class="pic2">
+    <br><button class="toggle">토글버틀</button>
+
+    <script>
+        const toggle=document.querySelector(".toggle");
+        const pic1=document.querySelector(".pic1");
+        const pic2=document.querySelector(".pic2");
+
+        toggle.addEventListener("click", ()=>{
+        pic1.classList.toggle("active");
+        pic2.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>

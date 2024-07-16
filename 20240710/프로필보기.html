@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 보기</title>
+    <style>
+        #modal-box{border: 1px solid; background-color: rgb(0, 128, 0, 0.6); position: fixed; top: 0; left: 0; bottom: 0; right: 0; display: none; justify-content: center; align-items: center;}
+        #modal-contents{width: 300px; height: 200px; border: 3px dashed orange; padding: 50px; background-color: aquamarine;}
+        #modal-box.active{display: flex;}
+    </style>
+</head>
+<body>
+    <button id="open">열기</button>
+
+    <div id="modal-box">
+        <div id="modal-contents">
+            <span id="title">My Profile</span>
+            <button id="close">닫기 X</button>
+        </div>
+    </div>
+
+    <script>
+        const open=document.querySelector(#open);
+        const close=document.querySelector(#close);
+        const modalBox=document.querySelector(#modal-box);
+
+        open.addEventListener("click",()=>{modalBox.classList.add("active"); });
+        close.addEventListener("click",()=>{modalBox.classList.remove("active");})
+
+    </script>
+</body>
+</html>

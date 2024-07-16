@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>회원 정보 입력</h3>
+    <form action="" name="fo" method="get">
+        <fieldset><legend>로그인 정보</legend>
+            아이디 <input type="text" id="user-id" placeholder="아이디를 입력하세요." size="18"><br>
+            비밀번호 <input type="password" id="user-pw" placeholder="비밀번호를 입력하세요." size="16">
+            <input type="submit" value="로그인"></fieldset>
+    </form>
+
+    <form action="" name="fo" method="get">
+        <fieldset><legend>추가 정보</legend>
+        메일주소 <input type="email" placeholder="id@host" size="9"><br><br>
+        <label for=""><input type="radio" name="수신방법" value="1" checked>메일</label>
+        <label for=""><input type="radio" name="수신방법" value="2" checked>핸드폰</label>
+        <label for=""><input type="radio" name="수신방법" value="3" checked>집주소</label>
+        <label for=""><input type="radio" name="수신방법" value="4" checked>수신거부</label><br><br>
+        연락처 <input type="text" id="phone" placeholder="010-1234-5678" size="10" maxlength="11" autocapitalize="off"><br>
+        생년월일 <input type="text" id="phone" placeholder="1900-00-00" size="8" maxlength="8"><br>
+        <input type="checkbox" id="취미" value="1">운동
+        <input type="checkbox" id="취미" value="2">독서
+        <input type="checkbox" id="취미" value="1">유튜브
+        <input type="checkbox" id="취미" value="1">게임<br><br>
+        가입경로<select id="path">
+            <option value="">블로그</option>
+            <option value="">검색</option>
+            <option value="">sns</option>
+            <option value="">지인추천</option>
+            <option value="">기타</option>
+        </select>
+        <br><br>
+        메모<textarea name="" id="" cols="30" rows="10" placeholder="메모를 남겨주세요."></textarea>   
+    </fieldset>
+    </form>
+
+    <p><input type="submit" value="제출"></p>
+
+
+</body>
+</html>

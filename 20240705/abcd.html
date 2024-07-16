@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--폰트어썸 CDN : --> <script src="https://kit.fontawesome.com/4ec79785b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="clone.html"><img id="logo_img" src="data:image/png;base64,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" alt="이미지손상"></a>
+        </div>
+        <ul class="header_ul">
+            <li class="list" id="list1">
+                <a href="">ABOUT</a>
+                <ul class="menu" id="menu1">
+                    <div class="box">Our Stroy</div>
+                    <div class="box">Our Coffee</div>
+                    <div class="box">Brew Guides</div>
+                </ul>
+            </li>
+            <li class="list"><a href="">CAFES</a></li>
+            <li class="list" id="list2"><a href="">MENU</a>
+                <ul class="menu" id="menu2">
+                    <div class="box">Coffee</div>
+                    <div class="box">Merchandise</div>
+                </ul>
+            </li>
+            <li class="list" id="list3"><a href="">COMPANY</a>
+                <ul class="menu" id="menu3">
+                    <div class="box">Contact</div>
+                    <div class="box">Carees</div>
+                </ul>
+            </li>
+            <li class="list"><a href="">NEWS</a></li>
+        </ul>
+    </header>
+    <main>
+        <h4>WELCOME EVERYONE</h4>
+        <div class="main_text">블루보틀에 오신 것을 <br>환영합니다. </div>
+        <button>블루보틀 소개</button>
+    </main>
+    <footer>
+        <p>CONNECT WITH US</p>
+        <nav>
+            <a href="#"><img class="footer_img" src="../images/instagram.svg" alt=""></a>
+            <a href="#"><img class="footer_img" src="../images/facebook-f.svg" alt=""></a>
+        </nav>
+    </footer>
+</body>
+</html>

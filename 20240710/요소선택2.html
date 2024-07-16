@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h2 id="title">자바스크립트 요소선택</h2>
+    <main>
+        <section>
+            <article>
+                <ul>
+                    <li class="item1">item1</li>
+                    <li class="item2">item2</li>
+                    <li class="item3">item3</li>
+                    <li class="item4">item4</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        const $list=document.querySelector(".list");
+        const items=$list.children; 
+        const item2=document.querySelector(".item2");
+        const li=document.querySelector("li");
+        const item3=document.querySelector(".item3");
+
+        console.log($list);
+        console.log(items);
+        console.log(items[0]);
+        console.log(items[2]);
+        console.log(item2);
+        console.log(item2.parentElement);
+        console.log(li.closet("article"));
+        console.log(item3.previousSibling); //Sibling 형제자매
+        console.log(item3.nextElementSibling);
+
+
+    </script>
+</body>
+</html>

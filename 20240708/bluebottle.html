@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        
+        /*header*/
+        header{display: flex; position: fixed; height: 25px; width: 100%; background-color: white; padding-inline: 55px; padding-block: 25px;}
+        nav{display: flex; justify-content: space-around; width: 30%;} /*width 미설정으로 justify-content: space 미적용*/
+        ul{list-style: none; } 
+        li{background-color: white;} 
+        
+        .down1{display: none;}
+        .about:hover .down1{display: block;}
+        .down2{display: none;}
+        .cafes:hover .down2{display: block;}
+        .down3{display: none;}
+        .menu:hover .down3{display: block;}
+        .down4{display: none;}
+        .company:hover .down4{display: block;}
+        .down5{display: none;}
+        .news:hover .down5{display: block;}
+
+        @media screen and (max-width: 767px) {.navbar ul{display: none;}}
+        .hamburger{display: none;}
+        @media screen and (max-width: 767px) {.hamburger{display: block;}}
+
+        .logo{margin-inline: 30px;}
+
+        /*main*/
+        .main{background-image: url(../images/커피.webp); width: 100%; height: 800px; background-size: cover;}        
+        span{color: rgb(97, 97, 97); position: absolute; top: 550px; left: 50px;}
+        button{background-color: rgb(29, 153, 255); border: 0; color: blanchedalmond; padding-block: 15px; padding-inline: 25px;}
+
+        /*footer*/
+        footer{color: rgb(97, 97, 97); margin: 45px; height: 30px;} 
+</style>
+</head>
+<body>
+    <header>
+    <div class="hamburger"><a href="#"> <img src="../images/햄버거아이콘.png" alt="" width="30px"> </a></div>
+    <div class="logo"> <a href="https://www.bluebottlecoffeekorea.com/"> <img src="../images/블루보틀로고.png" alt="" width="30px"></a></div>
+    <nav class="navbar">
+        <ul class="about">ABOUT
+            <div class="down1">
+            <li>내용</li>
+            <li>내용</li>
+            <li>내용</li></div>
+        </ul>
+        <ul class="cafes">CAFES
+            <div class="down2">
+            <li>내용</li>
+            <li>내용</li>
+            <li>내용</li></div>
+        </ul>
+        <ul class="menu">MENU
+            <div class="down3">
+            <li>내용</li>
+            <li>내용</li>
+            <li>내용</li></div>
+        </ul>
+        <ul class="company">COMPANY
+            <div class="down4">
+            <li>내용</li>
+            <li>내용</li>
+            <li>내용</li></div>
+        </ul>
+        <ul class="news">NEWS
+            <div class="down5">
+            <li>내용</li>
+            <li>내용</li>
+            <li>내용</li></div>
+        </ul>
+    </nav>
+    </header>
+    
+    <main class="main">
+       <span>
+        <h4>WELCOME EVERYONE</h4><br>
+        <h1>블루보틀에 오신 것을 <br>환영합니다.</h1><br>
+        <button>블루보틀 소개</button>
+        </span>
+    </main>
+
+    <footer>
+        <p><b> CONNECT WITH US</b></p>
+        <a href="#"> <img src="../images/인스타로고.png" alt="" width="30px"></a>
+        <a href="#"> <img src="../images/페북로고.png" alt="" width="30px"></a>
+    </footer>
+</body>
+</html>

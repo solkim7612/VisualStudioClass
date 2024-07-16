@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul { list-style: none; }
+        li{width: 100px;}
+    </style>
+</head>
+<body>
+    <h3>클릭해보세요</h3>
+    <h5>할 일 목록</h5>
+    <ul>
+        <li class="check"> &check; 할 일1</li>
+        <li class="check"> &check; 할 일2</li>
+        <li class="check"> &check; 할 일3</li>
+        <li class="check"> &check; 할 일4</li>
+        <li class="check"> &check; 할 일5</li>
+    </ul>
+
+    <script>
+        let listB = document.querySelectorAll('.check');
+
+        for(let i = 0; i < listB.length; i++) {
+            listB[i].addEventListener("click", function() {
+                this.parentNode.style.color = "hotpink";
+                this.style.textDecoration="line-through";
+                this.style.backgroundColor = "lightgray";
+                this.style.fontSize="20px"
+            });
+        }
+    </script>
+</body>
+</html>
