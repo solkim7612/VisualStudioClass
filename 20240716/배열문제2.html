@@ -9,8 +9,33 @@
     <script>
         let kor=[90,80,70,99,65,70];
 
-        let sum=kor[1]+kor[3]+kor[0];
-        alert(sum/3);
+
+        //평균 구하기
+        for(let i=0; i<kor.length; i++){ //length 최대횟수
+            console.log(kor[i])
+        }
+
+        //첫번째 방법
+        let sum=kor[0]+kor[1]+kor[2]+kor[3]+kor[4]+kor[5];
+        let avg=sum/kor.length; //<>parseInt
+        console.log(avg);
+
+        //두번째 방법
+        let total=0;
+        for(let i=0; i<kor.length; i++){
+            total+=kor[i]
+        }
+        let avg2=total/kor.length;
+        console.log(avg2)
+
+        //개수 세기
+        let counter=0;
+        for(let i=0; i<kor.length; i++){
+            if(kor[i] >avg2){
+                counter++;
+            }
+        }
+        console.log(counter);
     </script>
 </body>
 </html>
