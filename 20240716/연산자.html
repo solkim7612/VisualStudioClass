@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>a,b,result1,result2 의 값을 예상해 보자</h2>
+    <script>
+        let a=10, b=10;
+        let result1, result2;
+
+        a++; //a=10(+1)
+        result1=a++ + ++b; //11+11=22 //a=11(+1)
+        b++; //b=11(+1)
+        result2=b++ + ++a; //12+13=25 //b=12(+1)
+
+        cosole.log(a);
+        cosole.log(b);
+        cosole.log(result1);
+        cosole.log(result2);
+
+    </script>
+</body>
+</html>

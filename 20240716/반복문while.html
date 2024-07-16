@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>1~10까지 합 while 문</h2>
+    
+    <div id="result"></div>
+    
+    <script>
+        //1+2+3+4+5+6+7+8+9+10= 55 = 10*11/2 = n(n+1)/2
+
+        /*
+        input: x
+        process: 10까지합 sum
+        output: 항, 반복제어 변수 i
+        */
+
+        let sum=0;
+        let i=0;
+
+        while(i<10){
+            i++; 
+            sum+=i;
+        }
+        alert(sum);
+        document.querySelector("#result").innerHTML=sum;
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=7,b=3,c=11,d=9,e=18;
+
+        let arr=[7,3,11,9,18];
+
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d);
+        console.log(e);
+
+        console.log( arr[0] );
+        console.log( arr[1] );
+        console.log( arr[2] );
+        console.log( arr[3] );
+        console.log( arr[4] );
+        
+        for(let i=0; i<5; i++){
+            console.log(arr[i])
+        }
+
+        //1차원: 행 
+        //2차원: 행열(x,y)
+        //3차원: n번째,행,열 (n,x,y)
+
+        //1차원배열
+
+        let arr1=["apple","banana","cat","dog","elephant","flower","guitar","house","internet","jungle"];
+
+        console.log( arr1[0]); //apple
+        console.log( arr1[1]); //banana
+        console.log( arr1[2]); //cat
+        console.log( arr1[3]); //dog
+        console.log( arr1[4]); //elephant
+        console.log( arr1[5]); //flower
+        console.log( arr1[6]); //guitar
+        console.log( arr1[7]); //house
+        console.log( arr1[8]); //internet
+        console.log( arr1[9]); //jungle
+
+        //2차원배열
+
+        let arr2=[
+        ["apple","banana","cat","dog","elephant","flower","guitar","house","internet","jungle"], //1차원
+        ["kangaroo","lion","moon","nest","orange","piano","queen","rabbit","sun","tree"], //1차원
+        ["umbrella","vase","water","xylophone","yacht","zebra","ant","ball","car","door"] //1차원
+        ];
+       
+        console.log( arr2[0][0]); //apple
+        console.log( arr2[0][3]); //dog
+        console.log( arr2[0][8]); //internet
+        console.log( arr2[1][7]); //rabbit
+        console.log( arr2[1][6]); //queen
+        console.log( arr2[1][9]); //tree
+        console.log( arr2[1][4]); //orange
+        console.log( arr2[2][0]); //umbrella
+        console.log( arr2[2][9]); //door
+        console.log( arr2[2][2]); //water
+
+        //3차원배열
+        let arr3=[
+            [
+                ["apple","banana","cat","dog","elephant","flower","guitar","house","internet","jungle"],
+                ["kangaroo","lion","moon","nest","orange","piano","queen","rabbit","sun","tree"], 
+                ["umbrella","vase","water","xylophone","yacht","zebra","ant","ball","car","door"]
+            ], //1차원+1차원=2차원
+            [
+                ["egg","fire","garden","hat","ice","jacket","key","lamp","mouse","note"],
+                ["orange","pencil","queen","rain","sun","table","umbrella","vase","water","xylophone"],  
+                ["yacht","zebra","apple","banana","cat","dog"]
+            ] //1차원+1차원=2차원
+                ];
+
+        console.log( arr3[0][1][1]); //lion
+        console.log( arr3[0][2][3]); //xylophone
+        console.log( arr3[0][2][4]); //yacht
+        console.log( arr3[0][1][6]); //queen
+        console.log( arr3[0][1][7]); //rabbit
+        console.log( arr3[1][2][5]); //dog
+        console.log( arr3[1][1][2]); //queen
+        console.log( arr3[1][1][4]); //sun
+        console.log( arr3[1][2][4]); //cat
+        console.log( arr3[1][1][8]); //water
+
+
+    </script>
+</body>
+</html>
