@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>태어난지 몇 일 구하기</h2>
+
+    <script>
+        let now=new Date();
+        let born = new Date("1992-01-01");
+        
+        let bornNow=now.getTime();
+        let bornT=born.getTime();
+
+        let time=bornNow-bornT;
+        let timeDay=Math.round(time/1000*60*60*24); //1000=1s
+
+        alert(timeDay);
+        
+        
+    </script>
+</body>
+</html>
