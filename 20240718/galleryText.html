@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        // let msg=[ "여름이 왔네요" ,"프론트 프로젝트 시작 몇일전 !!", "밖은 덥지만 에이콘은 시원해요" ," 여기가 천국 즐코 !!"] ;
+        // let i=0;
+        // function next(){
+        //     let gallery= document.querySelector(".gallery");
+        //     gallery.innerHTML=msg[i];
+        //     i++;
+
+        //     if(i>=msg.length){
+        //         i=0;
+        //     }
+        // }
+
+       
+        
+
+
+        function init(){
+            let divs= document.querySelectorAll("gallery>div")
+            for(let i=0; i<divs.length; i++){
+                divs[i]= divs[i].innerHTML;
+            }
+            console.log(divs);
+        }
+
+    </script>
+
+</head>
+<body onload="init()">
+    <div class="wrap">
+        <div class="gallery">
+            <div>여름이 왔네요</div>
+            <div>프론트 프로젝트 시작 몇일전 !!</div>
+            <div>밖은 덥지만 에이콘은 시원해요</div>
+            <div>여기가 천국 즐코 !!</div>
+        </div>
+    </div>
+
+    <button onclick="next()">next</button>
+</body>
+</html>

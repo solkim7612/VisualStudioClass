@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom요소 선택1</title>
+    <script>
+        function change1(){
+
+            let wrap1=document.querySelector("#wrap1");
+            wrap1.innerHTML="내용";
+            wrap1.style.width="100px";
+            wrap1.style.height="100px";
+            wrap1.style.backgroundColor="yellow"
+
+
+
+            // let wrap1=document.getElementById("wrap1")[0];
+            // wrap1.innerHTML="내용";
+            // wrap1.style.width="100px";
+            // wrap1.style.height="100px";
+            // wrap1.style.backgroundColor="yellow"
+        }
+
+        function change2(){
+            let wrap1=document.getElementById("wrap1");
+            wrap1.innerHTML="내용2";
+            wrap1.style.width="100px";
+            wrap1.style.height="100px";
+            wrap1.style.backgroundColor="red"
+        }
+
+    
+
+    </script>
+</head>
+<body>
+    <h4>dom요소 선택</h4>
+
+    <div id="wrap1" ></div>
+
+    <button onclick="change1()">click</button>
+    <button onclick="change2()">click</button>
+
+</body>
+</html>

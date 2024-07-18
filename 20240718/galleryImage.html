@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let imgNames= ["../media/Penguins.png", 
+                    "../media/Lighthouse.png",
+                    "../media/Chrysanthemum.png",
+                    "../media/Desert.png",
+                    "../media/Hydrangeas.png",
+                    "../media/Jellyfish.png",
+                    "../media/Koala.png",
+                    "../media/Tulips.png"
+                ] ;
+        
+        let index=0;
+
+        
+
+
+        function nextImg(){
+            index++;
+            if(index>=imgNames.length){
+                index=0;
+            }
+            let gallery= document.querySelector(".gallery");
+
+            gallery.style.backgroundImage ="url('"+ imgNames[index] +"')"; 
+            gallery.style.backgroundPosition="center"
+            gallery.style.backgroundSize="cover";
+        }
+
+    </script>
+
+    <style>
+        *{
+            border: 1px solid;
+        }
+
+        .gallery-wrap, .gallery{
+            width: 300px;
+            height: 300px;
+            position: relative; /*parent*/
+        }
+
+
+        .gallery{
+            background-image: url("../media/Penguins.png");
+
+        }
+
+
+        .leftbtn, .rightbtn{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute; /*child*/
+            top: 100px; 
+        }
+
+        .leftbtn{
+            left: 0px;
+        }
+
+        .rightbtn{
+            right: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="gallery-wrap">
+        <div class="gallery"></div>
+        <div class="leftbtn"></div>
+        <div class="rightbtn" onclick="nextImg()"></div>
+        
+    </div>
+</body>
+</html>

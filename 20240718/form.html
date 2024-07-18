@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function loginCheck(){
+            let frm=document.frm; //let frm=ducument.forms[0]; form 내에서 0번째0
+            let userid= document.frm.id; //let userid=frm.elements[0] frm 내에서 0번째
+            let id=userid.value; 
+
+            let userpw=document.frm.pw;
+            let pw=userid.value;
+
+            if(id==""){
+                alert("아이디 입력");
+                userid.focus();
+
+            }
+            else if(pw==""){
+                userpw.focus();
+            }
+            else{
+                alert("로그인 중이다");
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    <form name="frm" action="/login" method="post">
+        <input type="text" name="id">
+        <input type="password" name="pw">
+
+        <button type="button" onclick="loginCheck()">로그인</button>
+    </form>
+</body>
+</html>

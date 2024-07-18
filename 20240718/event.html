@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        function a(obj){
+            obj.style.backgroundColor="green";
+        }
+
+        function b(obj){
+            obj.style.backgroundColor="orange";
+            
+        }
+
+    </script> -->
+</head>
+<body>
+    <input type="text" id="id" > 
+    <!-- +  onfocus="a(this)" onblur="b(this)" -->
+
+    <script>
+        let id= document.querySelector("#id");
+        id.addEventListener("focus", function(){
+            this.style.backgroundColor="blue";
+            
+        });
+        
+        id.addEventListener("blur", a);
+
+        function a(){
+            this.style.backgroundColor="pink";
+            
+        }
+
+    </script>
+</body>
+</html>

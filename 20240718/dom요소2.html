@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(){
+            let amounts = document.querySelectorAll(".amount");
+
+            let sum=0;
+            for (let i=0; i<amounts.length; i++){
+                let item=amounts[i];
+                console.log(item);
+                let price=item.innerHTML;
+                price=parseInt(price);
+                sum+=pirce;
+
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h4>querySelectorAll 선택하기</h4>
+
+    <div class="amount">100</div>
+    <div class="amount">50</div>
+    <div class="amount">150</div>
+    <div class="amount">200</div>
+    <div class="amount">30</div>
+
+    합계 <span id="total"></span>
+    <button onclick="cal">click</button>
+</body>
+</html>

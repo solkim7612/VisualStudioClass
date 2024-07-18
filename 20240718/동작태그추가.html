@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createE(){
+            let ul= document.getElementById("result")
+            let li= document.createElement("li");
+            li.innerHTML="사과";
+            ul.appendChild(li)
+
+            li.addEventListener("click", function(){
+                this.remove();
+            });
+        }
+    </script>
+</head>
+<body>
+    <button onclick="createE()">click</button>
+    
+    <ul id="result">
+        
+
+    </ul>
+</body>
+</html>
