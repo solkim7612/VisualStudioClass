@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 1px solid;
+        }
+
+        /* .item{
+            text-align: center;
+            line-height: 100px;
+            height: 100px;
+        } */
+
+        /* .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        } */
+
+        .item{
+            position: relative;
+            height: 100px;
+        }
+
+        .item_child{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="item"> <div class="item_child"> 요소 가운데 </div> </div>
+</body>
+</html>

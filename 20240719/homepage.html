@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap{
+            width: 1200px;
+            height: 800px;
+            margin: 0 auto;
+        }
+        header{
+            height: 100px;
+            display: flex;
+            position: relative;
+        }
+
+        nav{
+            height: 60px;
+            background-color: linen;
+            border-radius: 10px;
+        }
+
+        section{
+            height: 500px;
+        }
+
+        footer{
+            height: 100px;
+            display: flex;
+            background-color: linen;
+            border-radius: 10px;
+        } 
+
+        footer>div{
+            width: 33%;
+            height: 100px;
+            text-align:center;
+            line-height: 100px;
+        }
+
+        header .img{
+            width: 300px;
+            height: 60px;
+            position: absolute;
+            left: 30px;
+            top: 10px;
+
+            background-image: url(../images/logo.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        /*검색바 css*/
+        .search{
+            width: 300px;
+            height: 50px;
+            display: flex;
+
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .btn{
+            width: 50px;
+            height: 50px;
+            background-color: antiquewhite;
+            background-image: url(../images/검색.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .search input{
+            width: 230px;
+            margin-left: 20px;
+            border-radius: 20px;
+        }
+        
+        /* nav css */
+        nav ul{
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li{
+            padding: 20px 5px;
+        }
+
+        a{
+            text-decoration: none;
+
+        }
+
+        /*section scc*/
+        ul{
+            width: 900px;
+            list-style: none;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul li{
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+            box-sizing: border-box; 
+            text-align: center;
+        }
+
+        /*footer css*/
+        
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="img"></div>
+            <div class="search">
+                <input type="text">
+                <div class="btn"></div>
+            </div>
+            
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="joinus.html">회원가입</a></li>
+                <li><a href="homepage.html">홈으로</a></li>
+
+            </ul>
+        </nav>
+        
+        <section>
+            <ul>
+                <li>
+                    <img src="../images/피츄.webp" alt="" width="170px">
+                    <p>자바웹 개발과정</p>
+                    <p>07.01 개강</p>
+                </li>
+        
+                <li>
+                    <img src="../images/피카츄.webp" alt="" width="170px">
+                    <p>자바웹 개발과정</p>
+                    <p>07.01 개강</p>
+                </li>
+        
+                <li>
+                    <img src="../images/라이츄.webp" alt="" width="170px">
+                    <p>자바웹 개발과정</p>
+                    <p>07.01 개강</p>
+                </li>
+        
+                <li>
+                    <img src="../images/파이리.webp" alt="" width="170px">
+                    <p>자바웹 개발과정</p>
+                    <p>07.01 개강</p>
+                </li>
+        
+                <li>
+                    <img src="../images/리자드.webp" alt="" width="170px">
+                    <p>자바웹 개발과정</p>
+                    <p>07.01 개강</p>
+                </li>
+        
+                <li>
+                    <img src="../images/리자몽.webp" alt="" width="170px">
+                    <p>자바웹 개발과정</p>
+                    <p>07.01 개강</p>
+                </li>
+
+                
+        
+            </ul>
+        </section>
+        
+        <footer>
+            <div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6635392.189427603!2d122.58505259094511!3d35.70315332404953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca39aaf5af01b%3A0x660743aa0774103d!2z7JeQ7J207L2Y7JWE7Lm0642w66-4IO2ZjeuMgO2VmeybkA!5e0!3m2!1sko!2skr!4v1721357118528!5m2!1sko!2skr" width="400" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+            <div> (주)에이콘이즈 에이콘아카데미(홍대) </div>
+            <div> COPYRIGHT(C) HBILAB ALL RIGHTS RESERVED. </div>
+        </footer>
+    </div>
+</body>
+</html>
