@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h3> JSON 라이브러리 JSON.stringify() 매서드: 객체나 배열을 하나의 문자열로 만들어 준다. </h3>
+
+    <script>
+    let arr = ['apple', 'banana', 'melon'];
+    console.log(arr);
+
+    let arrString = JSON.stringify(arr);
+    console.log(arrString);
+
+
+    let str="[\"apple\", \"banana\", \"melon\"]"; 
+    console.log(str);
+
+    </script> -->
+
+
+    <h3> JSON.parse() 배열이나 객체의 구조를 가진 문자열을 실제 객체나 배열로 변환해 주는 기능을 제공한다./h3>
+    <script>
+        let arr = ['apple', 'banana', 'melon'];
+        console.log(arr);
+        
+        let arrString = JSON.stringify(arr);
+        console.log(arrString);
+
+        let arr2=JSON.parse(arrString);
+        console.log(arr2);
+    </script>
+</body>
+</html>

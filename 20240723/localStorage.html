@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> local storage 사용하기 </h3>
+    <p>사용자의 로컬 컴퓨터에 저장할 수 있는 웹 스토리지 기능을 제공한다.</p>
+    <p>로컬스토리지: 브라우저가 닫혀도 사리지지 않는 영구적인 저장소이다- 데이터가 계속 유지되도록 한다 </p>  
+    <p>필요성 :  실행도중 데이터를 저장할 공간을 필요로 한다 - 검색어 기능을 구현해본다 </p>
+
+    <ul class="list">
+
+    </ul>
+
+
+    <script>
+        
+        //로칼저장소에 데이터 저장하기 (키, 값value )//
+        // localStorage.setItem("testKey", "딸기");
+        
+        // let result = localStorage.getItem("testkey");
+        
+        // console.log(result);
+
+
+        // let search=["과자", "수박", "선크림"]
+        
+        
+        // let searchString=JSON.stringify(search);
+        // console.log(searchString);
+        // localStorage.setItem("search", searchString );
+
+        //저장방법
+        //1. "문자열"화 시킨다.
+        //2. 로컬저장소에 저장한다.
+
+
+        // let readSearchString=localStorage.getItem("search");
+        // console.log(readSearchString);
+
+        //가져오기(읽어오기)
+
+        
+        // let readSearch = JSON.parse(readSearchString);
+        // console.log(readSearch)
+
+        //배열로 변환하기
+
+
+
+        
+       
+        let search=["과자", "수박", "선크림"];
+        let searchString=JSON.stringify(search);
+        localStorage.setItem("search", searchString);
+        
+        let readSearchString=localStorage.getItem("search");
+        let readSearch=JSON.parse(readSearchString);
+        
+        console.log(readSearch);
+
+        let list = document.querySelector(".list");
+
+
+        let str="";
+        for(let i=0; i<readSearch.length; i++){
+            let item = readSearch[i];
+            str+="<li>"+item+"</li>";
+        }
+
+        list.innerHTML=str;
+
+
+
+    </script>
+
+</body>
+</html>

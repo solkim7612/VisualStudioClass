@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4> 이벤트 속성 </h4>
+
+    <button class="btn1"> click1 </button>
+
+    <h4> addEventListener </h4>
+
+    <button class="btn2"> click2 </button>
+
+    <script>
+        
+        //이벤트속성 방법: 기존 이벤트처리 지워짐//
+        let btn1 = document.querySelector(".btn1")
+        btn1.onclick = function (  ){
+            alert("클릭되었어");
+        };
+
+        btn1.onclick = function (  ){
+            alert("클릭되었어??");
+        };
+
+        
+        
+        //2번 방법: 이벤트 둘 다 나옴//
+        let btn2 = document.querySelector(".btn2");
+        btn2.addEventListener("click", function(  ){
+            alert("클릭함!!");
+        });
+        
+        btn2.addEventListener("click", function(  ){
+            alert("클릭함!!ㅎㅎㅎ");
+        });
+
+
+    </script>
+
+
+</body>
+</html>

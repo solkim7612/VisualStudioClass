@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // this 사용//
+        // function showContent( obj ){
+        //     let content = obj.innerHtml
+        //     alert(content);
+        // } 
+
+
+        //이벤트객체 사용//
+        // function showContent(){
+        //     console.log( event) ;
+
+        //     let content = event.target.innerHTML;
+        //     alert(content);
+        // }
+
+        //addeventlistenr 사용//
+        // let menu1 = document.querySelectorAll("#menu1");
+        // menu1.addEventListener("click", function(e){
+        //     let content = e.target.innerHTML
+        //     alert(content);
+        // });
+
+
+        
+        // let items=document.querySelectorAll(".item");
+
+        // for( let i=0; i<items.length; i++){
+        //     let item = items[i];
+        //     item.addEventListener("click", function(e){
+        //         console.log(e);
+        //         let content = e.target.innerHTML;
+        //         alert(content+"선택하셨군요");
+        //     })
+        // }
+
+
+        for( let i=0; i<items.length; i++){
+            let item = items[i];
+            item.addEventListener("click", e=> 
+                alert(e.target.innerHTML+"선택하셨군요")
+            )
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <div  class="item">아메리카노</div>
+     <div  class="item">라떼</div>
+     <div  class="item">망고쥬스</div>
+
+     <!-- <div  class="item" onclick="showContent(this) ">망고쥬스</div> -->
+     <!-- <div  class="item" onclick="showContent() ">망고쥬스</div> -->
+     <!-- <div  class="item" id="menu1">망고쥬스</div> -->
+
+</body>
+</html>
