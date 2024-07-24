@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let newwindow;
+
+        function openwindow(){
+            newwindow=window.open("http://www.naver.com","myWin", "lert=0, top=0, width=400, height=300");
+
+        }
+
+        function closewindow(){
+            if(newwindow=null   newwindow.closed){
+                return;
+            }
+            newwindow.closewindow();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="openwindow()"> 네이버 </button>
+    <button onclick="closewindow()">창닫기</button>
+</body>
+</html>

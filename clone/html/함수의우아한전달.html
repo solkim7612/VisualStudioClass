@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function showMyinfo(name, email, tel, address){
+            console.log(name);
+            console.log(email);
+            console.log(tel);
+            console.log(address);
+        }
+
+        function grace(info){
+            console.log(info.name);
+            console.log(info.email);
+            console.log(info.tel);
+            console.log(info.address);
+        }
+
+        showMyinfo("우주연", "victori@naver.com", "010-1234-5678", "서울 송파구")
+        grace({
+            name: "우주연",
+            email: "victori@naver.com",
+            tel: "010-1234-5678",
+            address: "서울시 송파구"
+        });
+
+    </script>
+</head>
+<body>
+    
+    
+
+</body>
+</html>

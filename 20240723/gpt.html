@@ -41,7 +41,7 @@
 
         .items{
             display: flex;
-            height: 600px;
+            height: 400px;
             flex-wrap: wrap;
         }
 
@@ -51,121 +51,138 @@
         }
 
         button{
-            background-color: lightgrey;
-            padding: 1px;
+            border-style: none;
         }
+
+        a{
+            color: blue;
+        }
+
     </style>
 
     <script>
+
+
+        let storageArray = JSON.parse(localStorage.getItem('deletedItems')) || [];
+
         function deleteMe(obj){
+            let item = obj.parentElement.getAttribute('data-info');
+            storageArray.push(item);
+            localStorage.setItem('deletedItems', JSON.stringify(storageArray));
             obj.parentElement.remove();
-
-            var deletedData = obj.parentElement.dataset.info;
-            document.getElementById('deletedItems').value += deletedData + ', ';
-            let str  = document.getElementById('deletedItems').value;
-
-            alert( str); 
-           
-            let arr  =str.split(",");
-            
-            for( let i=0 ; i< arr.length ; i++){
-                 alert( arr[i]);
-            }
-
-
-
-            alert('준비 완료');
-
+            showData();
         }
+
+        function showData(){
+            let deletedItems = document.querySelector("#deletedItems");
+            let str = "<ul>";
+            storageArray.forEach(function(item, i){
+                str += "<li data-info='" + item + "'>" + item + "<button onclick='deleteData(this)'> &#10003; </button></li>";
+            });
+            str += "</ul>";
+            deletedItems.innerHTML = str;
+        }
+
+        function deleteData(obj){
+            let li = obj.parentElement;
+            let itemToDelete = li.getAttribute('data-info');
+            let index = storageArray.indexOf(itemToDelete);
+            storageArray.splice(index, 1);
+            localStorage.setItem('deletedItems', JSON.stringify(storageArray));
+            li.remove();
+        }
+
+
     </script>
+
+
 </head>
-<body>
+<body onload="showData()">
     <a href="https://m.blog.naver.com/yopage/222780391305">참조링크</a>
 
     <div class="header">
         유럽여행준비
     </div>
     
-    <div>
-        <input type="text" id="deletedItems" placeholder="준비완료" readonly>
-    </div>
+    <div> <b> 준비완료 </b> </div>
+    <div id="deletedItems"></div>
 
     <div class="items">
         <div class="item"> 
-            <ul> 필수준비물
-                <li data-info="여권"> <button onclick="deleteMe(this)"> X </button> 여권</li>
-                <li data-info="영문백신접종증명서"> <button onclick="deleteMe(this)"> X </button> 영문백신접종증명서</li>
-                <li data-info="신분증"> <button onclick="deleteMe(this)"> X </button> 신분증</li>
-                <li data-info="여권사본, 여권사진"> <button onclick="deleteMe(this)"> X </button> 여권사본, 여권사진</li>
-                <li data-info="항공권"> <button onclick="deleteMe(this)"> X </button> 항공권</li>
-                <li data-info="현지화폐"> <button onclick="deleteMe(this)"> X </button> 현지화폐</li>
-                <li data-info="신용&체크카드"> <button onclick="deleteMe(this)"> X </button> 신용&체크카드</li>
-                <li data-info="여행자보험"> <button onclick="deleteMe(this)"> X </button> 여행자보험</li>
+            <ul> <b> 필수준비물 </b>
+                <li data-info="여권"> <button onclick="deleteMe(this)"> &#10003; </button> 여권</li>
+                <li data-info="영문백신접종증명서"> <button onclick="deleteMe(this)"> &#10003; </button> 영문백신접종증명서</li>
+                <li data-info="신분증"> <button onclick="deleteMe(this)"> &#10003; </button> 신분증</li>
+                <li data-info="여권사본, 여권사진"> <button onclick="deleteMe(this)"> &#10003; </button> 여권사본, 여권사진</li>
+                <li data-info="항공권"> <button onclick="deleteMe(this)"> &#10003; </button> 항공권</li>
+                <li data-info="현지화폐"> <button onclick="deleteMe(this)"> &#10003; </button> 현지화폐</li>
+                <li data-info="신용&체크카드"> <button onclick="deleteMe(this)"> &#10003; </button> 신용&체크카드</li>
+                <li data-info="여행자보험"> <button onclick="deleteMe(this)"> &#10003; </button> 여행자보험</li>
             </ul>
         </div>
 
         <div class="item"> 
-            <ul> 세면도구&화장품
-                <li data-info="스킨 로션, 수분크림"> <button onclick="deleteMe(this)"> X </button> 스킨 로션, 수분크림</li>
-                <li data-info="선크림"> <button onclick="deleteMe(this)"> X </button> 선크림</li>
-                <li data-info="치약, 칫솔, 가글"> <button onclick="deleteMe(this)"> X </button> 치약, 칫솔, 가글</li>
-                <li data-info="샴푸, 린스, 바디워시"> <button onclick="deleteMe(this)"> X </button> 샴푸, 린스, 바디워시</li>
-                <li data-info="드라이기, 고데기"> <button onclick="deleteMe(this)"> X </button> 드라이기, 고데기</li>
-                <li data-info="화장품"> <button onclick="deleteMe(this)"> X </button> 화장품</li>
-                <li data-info="클렌징제품"> <button onclick="deleteMe(this)"> X </button> 클렌징제품</li>
-                <li data-info="마스크팩"> <button onclick="deleteMe(this)"> X </button> 마스크팩</li>
+            <ul> <b> 세면도구&화장품 </b>
+                <li data-info="스킨 로션, 수분크림"> <button onclick="deleteMe(this)"> &#10003; </button> 스킨 로션, 수분크림</li>
+                <li data-info="선크림"> <button onclick="deleteMe(this)"> &#10003; </button> 선크림</li>
+                <li data-info="치약, 칫솔, 가글"> <button onclick="deleteMe(this)"> &#10003; </button> 치약, 칫솔, 가글</li>
+                <li data-info="샴푸, 린스, 바디워시"> <button onclick="deleteMe(this)"> &#10003; </button> 샴푸, 린스, 바디워시</li>
+                <li data-info="드라이기, 고데기"> <button onclick="deleteMe(this)"> &#10003; </button> 드라이기, 고데기</li>
+                <li data-info="화장품"> <button onclick="deleteMe(this)"> &#10003; </button> 화장품</li>
+                <li data-info="클렌징제품"> <button onclick="deleteMe(this)"> &#10003; </button> 클렌징제품</li>
+                <li data-info="마스크팩"> <button onclick="deleteMe(this)"> &#10003; </button> 마스크팩</li>
             </ul>
         </div>
 
         <div class="item"> 
-            <ul> 전자기기
-                <li data-info="멀티어댑터"> <button onclick="deleteMe(this)"> X </button> 멀티어댑터</li>
-                <li data-info="변환잭"> <button onclick="deleteMe(this)"> X </button> 변환잭</li>
-                <li data-info="핸드폰충전기"> <button onclick="deleteMe(this)"> X </button> 핸드폰충전기</li>
-                <li data-info="보조배터리"> <button onclick="deleteMe(this)"> X </button> 보조배터리</li>
-                <li data-info="카메라"> <button onclick="deleteMe(this)"> X </button> 카메라</li>
-                <li data-info="노트북"> <button onclick="deleteMe(this)"> X </button> 노트북</li>
-                <li data-info="삼각대, 셀카봉"> <button onclick="deleteMe(this)"> X </button> 삼각대, 셀카봉</li>
-                <li data-info="이어폰"> <button onclick="deleteMe(this)"> X </button> 이어폰</li>
+            <ul> <b> 전자기기 </b>
+                <li data-info="멀티어댑터"> <button onclick="deleteMe(this)"> &#10003; </button> 멀티어댑터</li>
+                <li data-info="변환잭"> <button onclick="deleteMe(this)"> &#10003; </button> 변환잭</li>
+                <li data-info="핸드폰충전기"> <button onclick="deleteMe(this)"> &#10003; </button> 핸드폰충전기</li>
+                <li data-info="보조배터리"> <button onclick="deleteMe(this)"> &#10003; </button> 보조배터리</li>
+                <li data-info="카메라"> <button onclick="deleteMe(this)"> &#10003; </button> 카메라</li>
+                <li data-info="노트북"> <button onclick="deleteMe(this)"> &#10003; </button> 노트북</li>
+                <li data-info="삼각대, 셀카봉"> <button onclick="deleteMe(this)"> &#10003; </button> 삼각대, 셀카봉</li>
+                <li data-info="이어폰"> <button onclick="deleteMe(this)"> &#10003; </button> 이어폰</li>
             </ul>
         </div>
 
         <div class="item"> 
-            <ul> 의류
-                <li data-info="상의&하의&원피스"> <button onclick="deleteMe(this)"> X </button> 상의&하의&원피스</li>
-                <li data-info="긴바지&반바지"> <button onclick="deleteMe(this)"> X </button> 긴바지&반바지</li>
-                <li data-info="아우터"> <button onclick="deleteMe(this)"> X </button> 아우터</li>
-                <li data-info="슬리퍼, 운동화"> <button onclick="deleteMe(this)"> X </button> 슬리퍼, 운동화</li>
-                <li data-info="잠옷, 양말, 속옷"> <button onclick="deleteMe(this)"> X </button> 잠옷, 양말, 속옷</li>
-                <li data-info="물안경&수영복"> <button onclick="deleteMe(this)"> X </button> 물안경&수영복</li>
-                <li data-info="선글라스"> <button onclick="deleteMe(this)"> X </button> 선글라스</li>
-                <li data-info="모자"> <button onclick="deleteMe(this)"> X </button> 모자</li>
+            <ul> <b> 의류 </b>
+                <li data-info="상의&하의&원피스"> <button onclick="deleteMe(this)"> &#10003; </button> 상의&하의&원피스</li>
+                <li data-info="긴바지&반바지"> <button onclick="deleteMe(this)"> &#10003; </button> 긴바지&반바지</li>
+                <li data-info="아우터"> <button onclick="deleteMe(this)"> &#10003; </button> 아우터</li>
+                <li data-info="슬리퍼, 운동화"> <button onclick="deleteMe(this)"> &#10003; </button> 슬리퍼, 운동화</li>
+                <li data-info="잠옷, 양말, 속옷"> <button onclick="deleteMe(this)"> &#10003; </button> 잠옷, 양말, 속옷</li>
+                <li data-info="물안경&수영복"> <button onclick="deleteMe(this)"> &#10003; </button> 물안경&수영복</li>
+                <li data-info="선글라스"> <button onclick="deleteMe(this)"> &#10003; </button> 선글라스</li>
+                <li data-info="모자"> <button onclick="deleteMe(this)"> &#10003; </button> 모자</li>
             </ul>
         </div>
 
         <div class="item"> 
-            <ul> 생필품
-                <li data-info="마스크"> <button onclick="deleteMe(this)"> X </button> 마스크</li>
-                <li data-info="수건"> <button onclick="deleteMe(this)"> X </button> 수건</li>
-                <li data-info="우산, 우비"> <button onclick="deleteMe(this)"> X </button> 우산, 우비</li>
-                <li data-info="연고, 밴드, 소독약"> <button onclick="deleteMe(this)"> X </button> 연고, 밴드, 소독약</li>
-                <li data-info="두통약, 진통제"> <button onclick="deleteMe(this)"> X </button> 두통약, 진통제</li>
-                <li data-info="감기약, 소화제"> <button onclick="deleteMe(this)"> X </button> 감기약, 소화제</li>
-                <li data-info="영양제"> <button onclick="deleteMe(this)"> X </button> 영양제</li>
-                <li data-info="생리대"> <button onclick="deleteMe(this)"> X </button> 생리대</li>
+            <ul> <b> 생필품 </b>
+                <li data-info="마스크"> <button onclick="deleteMe(this)"> &#10003; </button> 마스크</li>
+                <li data-info="수건"> <button onclick="deleteMe(this)"> &#10003; </button> 수건</li>
+                <li data-info="우산, 우비"> <button onclick="deleteMe(this)"> &#10003; </button> 우산, 우비</li>
+                <li data-info="연고, 밴드, 소독약"> <button onclick="deleteMe(this)"> &#10003; </button> 연고, 밴드, 소독약</li>
+                <li data-info="두통약, 진통제"> <button onclick="deleteMe(this)"> &#10003; </button> 두통약, 진통제</li>
+                <li data-info="감기약, 소화제"> <button onclick="deleteMe(this)"> &#10003; </button> 감기약, 소화제</li>
+                <li data-info="영양제"> <button onclick="deleteMe(this)"> &#10003; </button> 영양제</li>
+                <li data-info="생리대"> <button onclick="deleteMe(this)"> &#10003; </button> 생리대</li>
             </ul>
         </div>
 
         <div class="item"> 
-            <ul> 기타
-                <li data-info="유심칩"> <button onclick="deleteMe(this)"> X </button> 유심칩</li>
-                <li data-info="비상식량"> <button onclick="deleteMe(this)"> X </button> 비상식량</li>
-                <li data-info="물안경&수영복"> <button onclick="deleteMe(this)"> X </button> 물안경&수영복</li>
-                <li data-info="방수팩"> <button onclick="deleteMe(this)"> X </button> 방수팩</li>
-                <li data-info="핫팩 or 아이스팩"> <button onclick="deleteMe(this)"> X </button> 핫팩 or 아이스팩</li>
-                <li data-info="자물쇠, 스프링롤"> <button onclick="deleteMe(this)"> X </button> 자물쇠, 스프링롤</li>
-                <li data-info="목 베개"> <button onclick="deleteMe(this)"> X </button> 목 베개</li>
-                <li data-info="국제학생증 or 국제면허증"> <button onclick="deleteMe(this)"> X </button> 국제학생증 or 국제면허증</li>
+            <ul> <b> 기타 </b>
+                <li data-info="유심칩"> <button onclick="deleteMe(this)"> &#10003; </button> 유심칩</li>
+                <li data-info="비상식량"> <button onclick="deleteMe(this)"> &#10003; </button> 비상식량</li>
+                <li data-info="물안경&수영복"> <button onclick="deleteMe(this)"> &#10003; </button> 물안경&수영복</li>
+                <li data-info="방수팩"> <button onclick="deleteMe(this)"> &#10003; </button> 방수팩</li>
+                <li data-info="핫팩 or 아이스팩"> <button onclick="deleteMe(this)"> &#10003; </button> 핫팩 or 아이스팩</li>
+                <li data-info="자물쇠, 스프링롤"> <button onclick="deleteMe(this)"> &#10003; </button> 자물쇠, 스프링롤</li>
+                <li data-info="목 베개"> <button onclick="deleteMe(this)"> &#10003; </button> 목 베개</li>
+                <li data-info="국제학생증 or 국제면허증"> <button onclick="deleteMe(this)"> &#10003; </button> 국제학생증 or 국제면허증</li>
             </ul>
         </div>
 
