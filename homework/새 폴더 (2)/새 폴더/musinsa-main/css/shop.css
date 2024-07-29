@@ -1,0 +1,466 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  margin-top: 130px;
+}
+/* title */
+.search_title {
+  width: 100%;
+  height: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title_txt {
+  padding: 0px;
+  margin: 0px;
+}
+/* nav */
+.pc_shop_tab {
+  margin-top: 20px;
+  height: 46px;
+  color: #222;
+  box-sizing: border-box;
+  position: sticky;
+  top: 86px;
+  z-index: 4;
+  background-color: white;
+}
+.tabs {
+  height: 44px;
+  border-bottom: 1px solid #f0f0f0;
+}
+ul {
+  list-style: none;
+}
+.header-wrap {
+  box-shadow: none;
+  height: 90px;
+}
+.ul_tab {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+
+  list-style: none;
+  padding-right: 40px;
+
+  display: flex;
+}
+.li_tab {
+  display: flex;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-left: 24px;
+}
+.tab {
+  display: flex;
+  text-decoration-line: none;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.25;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+
+  height: 103%;
+  padding-top: 15px;
+  padding-bottom: 6px;
+}
+.tab1 {
+  border-bottom: 2px solid #222;
+}
+/*  */
+.search_trend_container {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  margin: 0 auto;
+  max-width: 1280px;
+  overflow-x: hidden;
+}
+.trend_keyword_grid {
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.moving_control {
+  margin-top: 16px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/*  */
+.content {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding: 0 40px 80px;
+  position: relative;
+}
+/*  */
+aside {
+  width: 220px;
+  min-width: 220px;
+  position: sticky;
+  top: 130px; /* 헤더 바로 아래에 위치하도록 설정 */
+  height: calc(100vh - 80px);
+  z-index: 5;
+}
+
+.search_filter {
+  margin-right: 10px;
+  padding-right: 10px;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  position: relative;
+  padding-right: 10px;
+  max-height: calc(
+    100vh - 200px
+  ); /* 헤더와 하단 여백을 제외한 뷰포트 높이에 맞춰 조정 */
+  overflow-y: auto; /* 필터 영역 내 스크롤 가능하도록 설정 */
+}
+.filter_status {
+  padding: 20px 0 16px;
+}
+.statsu_txt {
+  font-size: 14px;
+  font-weight: 700px;
+  letter-spacing: -0.21px;
+}
+.express_btn {
+  min-width: 87px;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  border-radius: 30px;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 2.5px;
+  height: 32px;
+  padding: 8px 12px 7px;
+}
+svg {
+  height: 12px;
+  margin-top: 2px;
+  width: 10px;
+}
+.text {
+  color: rgba(34, 34, 34, 0.8);
+  font-size: 14px;
+}
+.filter_title {
+  padding: 16px 0;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.main_title {
+  font-size: 13px;
+  font-weight: 600px;
+  letter-spacing: -0.07px;
+}
+.filter_menu {
+  padding-bottom: 24px;
+}
+.menu_link {
+  display: flex;
+}
+.menu_link input {
+  margin-right: 10px;
+  width: 20px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000; /* 체크박스 테두리 색상 */
+  background-color: #fff; /* 체크박스 배경 색상 */
+  /* border-radius: 4px; 둥근 테두리 */
+  /* outline: none; 포커스시 테두리 제거 */
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #000; /* 체크된 배경 색상 */
+}
+input[type="checkbox"]:checked::before {
+  content: "\2713"; /* 유니코드로 체크마크 기호 */
+  color: #fff; /* 체크마크 색상 */
+  font-size: 14px; /* 체크마크 크기 */
+  position: absolute; /* 절대 위치로 설정 */
+  top: 0px; /* 상단 위치 조정 */
+  left: 1px; /* 좌측 위치 조정 */
+}
+
+.link_txt {
+  font-size: 14px;
+  letter-spacing: -0.21px;
+}
+.menu {
+  padding-top: 10px;
+}
+.menu:nth-child(1) {
+  padding-top: 0;
+}
+.filter_list {
+  border-bottom: 1px solid #ebebeb;
+}
+.title_box {
+  display: flex;
+  flex-direction: column;
+}
+.main_title {
+  font-size: 13px;
+  font-weight: 600px;
+  letter-spacing: -0.07px;
+  position: relative;
+}
+.placeholder {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 15px;
+  letter-spacing: -0.15px;
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ico_box {
+  position: absolute;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: rgba(34, 34, 34, 0.3);
+}
+
+/* search_contents */
+
+.search_contents {
+  width: 980px;
+  height: 5000px;
+}
+.shop_counts {
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  height: 24px;
+}
+.title {
+  color: rgba(34, 34, 34, 0.8);
+  font-size: 13px;
+}
+.sorting_title {
+  color: #222;
+  font-size: 14px;
+  display: flex;
+}
+.filter_sorting {
+  display: flex;
+}
+button {
+  appearance: none;
+  background: none;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  padding: 0;
+}
+.search_result_list {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  row-gap: 40px;
+}
+/*  */
+
+.product_card {
+  display: flex;
+  flex-direction: column;
+}
+.item_inner {
+  display: flex;
+  flex-direction: column;
+}
+.action_wish_review {
+  padding: 12px 4px 0 4px;
+  column-gap: 12px;
+  display: flex;
+}
+.product {
+  background-color: rgb(244, 244, 244);
+  border-radius: 10px;
+  overflow: hidden;
+  padding-top: 100%;
+  position: relative;
+}
+.product_img {
+  height: auto;
+  width: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.image_full_width {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.status_value {
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: rgba(34, 34, 34, 0.8);
+}
+/*  */
+.product_info_area {
+  width: 145px;
+  height: 65px;
+  padding: 8px 4px 0px 4px;
+  flex: 1;
+}
+.tags {
+  margin-top: 6px;
+  display: flex;
+}
+.product_info_brand {
+  align-items: center;
+  color: #333;
+  display: flex;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.07px;
+  line-height: 16px;
+  margin-bottom: 2px;
+}
+.name {
+  height: 13px;
+  height: 47px;
+  font-size: 13px;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.translated_name {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.price_area {
+  width: 145px;
+  height: 32px;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-top: 12px;
+}
+.amount {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}
+.desc {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 2px;
+}
+.wish_figure {
+  align-items: center;
+  display: inline-flex;
+}
+.action_wish_review .text {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 12px;
+  letter-spacing: -0.06px;
+  margin-left: 4px;
+}
+.review_figure {
+  align-items: center;
+  display: inline-flex;
+}
+.display_tag_item {
+  background-color: rgb(242, 249, 246);
+  color: rgb(49, 180, 110);
+  border-radius: 2px;
+  display: inline-flex;
+  height: 20px;
+  margin-right: 4px;
+  padding: 4px;
+  position: relative;
+  width: fit-content;
+}
+.tag_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tag_icon i {
+  height: 12px;
+  margin-right: 1.5px;
+  object-fit: cover;
+  width: 12px;
+  margin-top: 5px;
+}
+.tag_text {
+  font-size: 10px;
+}
+/*  */
+
+.flicking-camera {
+  transform: translate(0px);
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  will-change: transform;
+  z-index: 1;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+.trending_keyword_slide {
+  width: 11%;
+  min-width: 80px;
+  display: inline-flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.trend_keyword {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+.trend_keyword img {
+  width: 90px;
+  height: 90px;
+}

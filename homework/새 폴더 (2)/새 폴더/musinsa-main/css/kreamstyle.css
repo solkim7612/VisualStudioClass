@@ -1,0 +1,338 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: "Pretendard-Regular";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+.header-wrap {
+  height: 196px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+.header-main {
+  position: relative;
+}
+.header-top,
+.header-main,
+.header-bottom {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+}
+.header-wrap .header-top .top-inner {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  height: 22px;
+  padding: 8px 40px 0;
+}
+.header-wrap .header-top .top-inner .top-list {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+.header-wrap .header-top .top-inner .top-list li {
+  margin-left: 24px;
+}
+.header-wrap .header-top .top-inner .top-list li a {
+  align-items: center;
+  color: rgba(34, 34, 34, 0.8);
+  display: flex;
+  font-size: 12px;
+  letter-spacing: -0.06px;
+}
+.header-wrap .header-main .main-inner {
+  align-items: center;
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  min-width: 320px;
+  padding: 20px 40px;
+}
+.header-wrap .header-main .main-inner .logo {
+  width: 120px;
+  height: 24px;
+  display: flex;
+  justify-content: flex-start;
+}
+.header-wrap .header-main .main-inner .logo a {
+  display: flex;
+  width: 120px;
+  height: 24px;
+}
+.header-wrap .header-main .main-inner .logo a .logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-wrap .header-main .main-inner .right {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  min-width: 120px;
+}
+.sty a {
+  font-weight: 700;
+}
+.header-wrap .header-main .main-inner .gnb-area {
+  align-items: center;
+  display: flex;
+}
+.header-wrap .header-main .main-inner .gnb-area .gnb-wrap .gnb-list {
+  align-items: center;
+  display: flex;
+}
+.header-wrap .header-main .main-inner .gnb-area .gnb-wrap .gnb-list li {
+  margin-right: 40px;
+}
+.header-wrap .header-main .main-inner .gnb-area .gnb-wrap .gnb-list li a {
+  display: flex;
+  font-size: 18px;
+  letter-spacing: -0.27px;
+  position: relative;
+}
+.header-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.12px;
+  padding-bottom: 16px;
+  padding-top: 100px;
+  text-align: center;
+  position: absolute;
+  left: 48%;
+  right: 50%;
+  top: 0;
+  z-index: 10;
+}
+.header-bottom {
+  margin-top: 64px;
+}
+.header-wrap .header-bottom .tabs .tabs-list {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 44px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  width: 100%;
+  position: sticky;
+  top: 152px;
+}
+
+.header-wrap .header-bottom .tabs .tabs-list .tab.david a span {
+  color: rgb(81, 52, 255);
+}
+
+.header-wrap .header-bottom .tabs .tabs-list .tab.david {
+  margin: 0;
+}
+.header-wrap .header-bottom .tabs .tabs-list .tab {
+  margin-left: 27px;
+  display: inline-flex;
+  height: 100%;
+  padding-bottom: 6px;
+  padding-top: 15px;
+}
+.header-wrap .header-bottom .tabs .tabs-list .tab.active {
+  border-bottom: 2px solid #222;
+  color: #222;
+  cursor: pointer;
+  position: relative;
+  font-weight: 700;
+}
+section {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+  max-width: 1280px;
+}
+
+.header-bottom {
+  margin-top: 0;
+}
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+}
+
+.tabs2 {
+  /* height: 1000px; */
+  /* border: 1px solid black; */
+  width: 1280px;
+  margin-top: 196px;
+  height: 143px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  padding: 0 40px;
+}
+
+.tabs2 ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  /* margin-left: 0; */
+}
+
+.tabs2 ul li {
+  width: 90px;
+  height: 110px;
+  /* border: 1px solid black; */
+  padding-top: 5px;
+}
+
+.tabs2-img {
+  width: 80px;
+  height: 80px;
+  /* border: 1px solid black; */
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.tabs2-img img {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+
+.tab2-text {
+  height: 16px;
+  /* border: 1px solid black; */
+  margin-top: 8px;
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  text-align: center;
+}
+
+.sty-wrap {
+  /* height: 500px; */
+  /* border: 1px solid black; */
+  min-width: 1280px;
+  /* margin-top: 50px; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.filter {
+  height: 37px;
+  width: 1240px;
+  /* border: 1px solid black; */
+  margin-top: 16px;
+  position: relative;
+}
+
+.filter ul {
+  list-style: none;
+  display: flex;
+
+  position: absolute;
+  top: 0;
+  right: -5px;
+}
+
+.filter ul li {
+  padding: 5px;
+  color: rgba(34, 34, 34, 0.8);
+  font-size: 14px;
+}
+.filter ul li button {
+  border: 0;
+  background-color: white;
+  color: rgba(34, 34, 34, 0.8);
+
+  cursor: pointer;
+}
+.sty-wrap2 {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.feed {
+  width: 310px;
+  height: 466px;
+  /* border: 1px solid black; */
+  padding: 10px;
+}
+
+.feed-img {
+  width: 285px;
+  height: 384px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-position: 50%;
+  border-radius: 10px;
+}
+
+.feed-img img {
+  width: 285px;
+  height: 507px;
+}
+
+span a {
+  color: rgb(34, 34, 34, 0.8);
+}
+
+span button {
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+  float: right;
+  font-size: 15px;
+  color: rgb(34, 34, 34, 0.5);
+  margin-right: 7px;
+}
+
+.feed-id {
+  margin-top: 5px;
+}
+
+.feed-tag {
+  margin-top: 5px;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scrollUp {
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid black; */
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+}
+
+.scrollUp button {
+  height: 48px;
+  width: 44px;
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}

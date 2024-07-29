@@ -1,0 +1,414 @@
+.wrap {
+    max-width: 1280px;
+    height: 5000px;
+    margin: 0 auto;
+    margin-top: 170px;
+    padding: 0 40px;
+    /* border: 1px solid black; */
+}
+
+.box1 {
+    height: 480.59px;
+    /* border: 1px solid black; */
+    margin: 0, 0, 16px;
+    padding: 0 , 40px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.box1_title {
+    /* border: 1px solid black; */
+    position: relative;
+}
+.box1_title2{
+    color: rgb(34, 34, 34, 0.5);
+}
+
+.box1_more {
+    /* border: 1px solid black; */
+
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+} 
+
+.box1_more button {
+    border: 0;
+    background-color: white;
+    color: rgb(34, 34, 34, 0.5);
+    cursor: pointer;
+    
+}
+.box1_prod{
+    height: 409.61px;
+    /* border: 1px solid black; */
+    margin-top: 20px;   
+}
+.box1_prod .a ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.box1_prod .a ul li{
+    /* border: 1px solid black; */
+    background-color: rgba(200, 201, 194, 0.253);
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+}
+.box1_rate{
+    width: 26px;
+    height: 26px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+    
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+.box1_trade{
+    font-size: 12px;
+    color: rgb(116, 111, 111);
+    position: absolute;
+    top: 10px; 
+    right: 5px;
+}
+.box1_save button{
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.box1_save{
+    /* font-size: 30px; */
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.box1_prod .b ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.box1_prod .b ul li{
+    width: 233.59px;
+    height: 106px;
+}
+.box1_prod .b ul span{
+    font-size: 10px;
+    color: rgb(34, 34, 34, .5);
+}
+.b-text{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.big_more{
+    /* border: 1px solid black; */
+    height: 62px;
+    text-align: center;
+}
+.big_more button{
+    width: 97.89px;
+    height: 42px;
+    border: 1px dashed saddlebrown;
+    color: rgb(34, 34, 34, .5);
+    padding: 0, 30px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+hr{
+    margin: 56px auto 40px;
+}
+.box2 {
+    height: 466.59px;
+    /* border: 1px solid black; */
+    margin: 0, 0, 16px;
+    padding: 0, 40px;
+    margin-top: 60px;
+
+}
+
+.box2_title {
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.box2_title2 {
+    color: rgb(34, 34, 34, 0.5);
+}
+
+.box2_more {
+    /* border: 1px solid black; */
+
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+
+.box2_more button {
+    border: 0;
+    background-color: white;
+    color: rgb(34, 34, 34, 0.5);
+    cursor: pointer;
+
+}
+
+.box2_prod {
+    height: 409.61px;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+
+.box2_prod .c ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.box2_prod .c ul li {
+    /* border: 1px solid black; */
+    background-color: rgba(200, 201, 194, 0.253);
+    cursor: pointer;
+    position: relative;
+}
+
+.box2_rate {
+    width: 26px;
+    height: 26px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+    
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.box2_trade {
+    font-size: 12px;
+    color: rgb(116, 111, 111);
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.box2_save button{
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.box2_save {
+    font-size: 20px;
+    position: absolute;
+    right: 8px;
+    bottom: 5px;
+}
+
+.box2_prod .d ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.box2_prod .d ul li {
+    width: 233.59px;
+    height: 106px;
+}
+
+.box2_prod .d ul span {
+    font-size: 10px;
+    color: rgb(34, 34, 34, .5);
+}
+
+.d-text {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.big_more {
+    /* border: 1px solid black; */
+    height: 62px;
+    text-align: center;
+}
+
+.big_more button {
+    width: 97.89px;
+    height: 42px;
+    border: 0.5px solid gray;
+    padding: 0, 30px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+hr {
+    margin: 56px auto 40px;
+}
+b{
+    font-weight: bold;
+}
+.box3 {
+    height: 466.56px;
+    /* border: 1px solid black; */
+    margin: 0, 0, 16px;
+    padding: 0, 40px;
+    margin-top: 106px;
+
+}
+
+.box3_title {
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.box3_title2 {
+    color: rgb(34, 34, 34, 0.5);
+}
+
+.box3_more {
+    /* border: 1px solid black; */
+
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+
+.box3_more button {
+    border: 0;
+    background-color: white;
+    color: rgb(34, 34, 34, 0.5);
+    cursor: pointer;
+
+}
+
+.box3_prod {
+    height: 409.61px;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+
+.box3_prod .e ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.box3_prod .e ul li {
+    /* border: 1px solid black; */
+    background-color: rgba(200, 201, 194, 0.253);
+    cursor: pointer;
+    position: relative;
+}
+
+.box3_rate {
+    width: 26px;
+    height: 26px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+    
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.box3_trade {
+    font-size: 12px;
+    color: rgb(116, 111, 111);
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.box3_save button{
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.box3_save {
+    font-size: 20px;
+    position: absolute;
+    right: 8px;
+    bottom: 5px;
+}
+
+.box3_prod .f ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.box3_prod .f ul li {
+    width: 233.59px;
+    height: 106px;
+}
+
+.box3_prod .f ul span {
+    font-size: 10px;
+    color: rgb(34, 34, 34, .5);
+}
+
+.f-text {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.big_more {
+    /* border: 1px solid black; */
+    height: 62px;
+    text-align: center;
+}
+
+.big_more button {
+    width: 97.89px;
+    height: 42px;
+    border: 0.5px solid gray;
+    padding: 0, 30px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+hr {
+    margin: 56px auto 40px;
+}

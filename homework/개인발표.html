@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>조건문</h1>
+    
+    <script>
+
+        function total(number){
+            if (number<0) {
+                return "negative";
+            }else if (number>0){
+                return "positive";
+            }else {
+                return "zero";
+            }
+        }
+
+        let result=total(10);
+        console.log(result);
+        
+
+
+        let fruit="apple";
+
+        switch (fruit){
+            case "pineapple":
+            console.log("this is pineapple")
+            break;
+            case "apple":
+            console.log("this is an apple")
+            break;
+            default: 
+            console.log("");
+        }
+
+        function divide(a, b) {
+            if (b === 0) {
+                throw new Error("Division by zero is not allowed");
+            }
+            return a / b;
+        }
+
+        try {
+            console.log(divide(10, 2)); // 5 출력
+            console.log(divide(10, 0)); // 예외 발생
+        } catch (e) {
+            console.error(e.message); // "Division by zero is not allowed" 출력
+        }
+        
+
+
+    </script>
+</body>
+</html>

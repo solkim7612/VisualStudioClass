@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/home_swipper.css" />
+    <link rel="stylesheet" href="/css/recommend.css" />
+    <link rel="stylesheet" href="/css/shortcut_section.css" />
+    <link rel="stylesheet" href="/css/alert.css" />
+    <link rel="stylesheet" href="/css/search.css" />
+    <script
+      src="https://kit.fontawesome.com/db3c20a06c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/brand_introduce.css" />
+  </head>
+
+  <body>
+    <header class="header-wrap">
+      <div class="header-top">
+        <div class="top-inner">
+          <ul class="top-list">
+            <li><a href="">고객센터</a></li>
+            <li><a href="">마이페이지</a></li>
+            <li><a href="">관심</a></li>
+            <li><a href="" id="notification">알림</a></li>
+            <li><a href="pages/login.html">로그인</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="main-inner">
+          <h1 class="logo">
+            <a href="">
+              <img src="./images/assets/크림.png" class="logo-img" alt="logo" />
+            </a>
+          </h1>
+          <div class="right">
+            <div class="gnb-area">
+              <nav class="gnb-wrap">
+                <ul class="gnb-list">
+                  <li><a href="/index.html" class="active">HOME</a></li>
+                  <li><a href="/pages/kreamstyle.html">STYLE</a></li>
+                  <li><a href="/pages/shop.html">SHOP</a></li>
+                </ul>
+              </nav>
+              <i class="fa-solid fa-magnifying-glass fa-xl" id="searchBtn"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <nav class="tabs">
+          <ul class="tabs-list">
+            <li class="tab david">
+              <a href=""><span>다비드바빌론</span></a>
+            </li>
+            <li class="tab active">
+              <a href=""><span>추천</span></a>
+            </li>
+            <li class="tab">
+              <a href="/pages/ranking.html"><span>랭킹</span></a>
+            </li>
+            <li class="tab">
+              <a href=""><span>럭셔리</span></a>
+            </li>
+            <li class="tab">
+              <a href=""><span>남성</span></a>
+            </li>
+            <li class="tab">
+              <a href=""><span>여성</span></a>
+            </li>
+            <li class="tab">
+              <a href=""><span>발견</span></a>
+            </li>
+            <li class="tab">
+              <a href=""><span>이벤트</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="recommend-card-section">
+      <div class="recommend-card-wrap">
+        <div class="recommend-card-flex-wrap">
+          <div class="column-wrap">
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="/images/recommend_img/크림드로우.webp"
+                    alt="크림 드로우"
+                  />
+                </div>
+                <div class="card-title">크림 드로우</div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="/images/recommend_img/정가아래.webp"
+                    alt="정가 아래"
+                  />
+                </div>
+                <div class="card-title">정가 아래</div>
+              </div>
+            </a>
+          </div>
+          <div class="column-wrap">
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="/images/recommend_img/남성추천.webp"
+                    alt="남성 추천"
+                  />
+                </div>
+                <div class="card-title">남성 추천</div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img src="/images/recommend_img/더폰.webp" alt="the phone" />
+                </div>
+                <div class="card-title">the phone</div>
+              </div>
+            </a>
+          </div>
+          <div class="column-wrap">
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="/images/recommend_img/여성추천.webp"
+                    alt="여성 추천"
+                  />
+                </div>
+                <div class="card-title">여성 추천</div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="/images/recommend_img/크림카드.webp"
+                    alt="KREAM 카드"
+                  />
+                </div>
+                <div class="card-title">KREAM 카드</div>
+              </div>
+            </a>
+          </div>
+          <div class="column-wrap">
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="/images/recommend_img/색다른추천.webp"
+                    alt="색다른 추천"
+                  />
+                </div>
+                <div class="card-title">색다른 추천</div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="./images//recommend_img/본투.webp"
+                    alt="본투윈 뉴 드랍"
+                  />
+                </div>
+                <div class="card-title">본투윈 뉴 드랍</div>
+              </div>
+            </a>
+          </div>
+          <div class="column-wrap">
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="/images/recommend_img/장마슈즈추천.webp"
+                    alt="장마 슈즈 추천"
+                  />
+                </div>
+                <div class="card-title">장마 슈즈 추천</div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img src="/images/recommend_img/최대.webp" alt="최대 99%" />
+                </div>
+                <div class="card-title">최대 99%</div>
+              </div>
+            </a>
+          </div>
+          <div class="column-wrap">
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="/images/recommend_img/바스켓케이스.webp"
+                    alt="바스켓케이스 드랍"
+                  />
+                </div>
+                <div class="card-title">바스켓케이스 드랍</div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="/images/recommend_img/역시즌.webp"
+                    alt="역시즌 & 시즌오프"
+                  />
+                </div>
+                <div class="card-title">역시즌 & 시즌오프</div>
+              </div>
+            </a>
+          </div>
+          <div class="column-wrap">
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img src="./images/recommend_img/구해요.webp" alt="구해요" />
+                </div>
+                <div class="card-title">구해요</div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="./images/recommend_img/내폰시세.webp"
+                    alt="내 폰 시세"
+                  />
+                </div>
+                <div class="card-title">내 폰 시세</div>
+              </div>
+            </a>
+          </div>
+          <div class="column-wrap">
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="./images/recommend_img/7월혜택.webp"
+                    alt="7월 혜택"
+                  />
+                </div>
+                <div class="card-title">7월 혜택</div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card-wrap">
+                <div class="card-img">
+                  <img
+                    src="./images/recommend_img/스캇.webp"
+                    alt="참여하면 스캇"
+                  />
+                </div>
+                <div class="card-title">참여하면 스캇</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="pagination-controls">
+        <button id="prevPage" class="disabled">
+          <img src="./images/assets/left-arrow copy.svg" alt="Previous" />
+        </button>
+        <div class="page">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
+        <button id="nextPage">
+          <img src="./images//assets/right-arrow copy.svg" alt="Next" />
+        </button>
+      </div>
+    </div>
+    <div class="new-releases-section">
+      <div class="new-releases-wrap">
+        <div class="title-container">
+          <div class="title-wrap">
+            <div class="title">Just Dropped</div>
+            <div class="sub-title">발매 상품</div>
+          </div>
+          <a href="">더보기</a>
+        </div>
+        <div class="product-list-wrap">
+          <div class="product-list" id="productList"></div>
+        </div>
+        <div class="product-btn">
+          <a id="moreDetail">더보기</a>
+        </div>
+      </div>
+    </div>
+    <div class="shortcut-section">
+      <div class="shortcut-wrap">
+        <div class="title-container">
+          <div class="title-wrap">
+            <div class="title">Top Brand</div>
+            <div class="sub-title">인기 탑 브랜드</div>
+          </div>
+        </div>
+        <div class="shortcut-item-wrap" id="shortcutItems"></div>
+      </div>
+    </div>
+    <div class="banner single">
+      <div class="banner_item">
+        <div class="item_inner">
+          <div class="img_box">
+            <img src="images/banner/광고1.webp" class="banner_img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn_top">
+      <img src="/images/assets/arrow-to-top.png" alt="Go to top" />
+    </button>
+    <div id="overlay"></div>
+    <div id="notification-popup">
+      <h2>알림</h2>
+      <p>알림 내용이 여기에 표시됩니다.</p>
+      <button id="close-popup">닫기</button>
+    </div>
+    <div id="search-overlay" class="hidden">
+      <header class="header-wrap-2">
+        <div class="search-box">
+          <input
+            class="input"
+            type="text"
+            id="search"
+            placeholder="브랜드, 상품, 프로필, 태그 등"
+          />
+          <button class="search_delete">
+            <img src="/images/assets/icons8-취소하다.svg" alt="" />
+          </button>
+        </div>
+      </header>
+      <a class="close-overlay"
+        ><img src="/images/assets/close_overlay.svg" alt=""
+      /></a>
+      <main class="main-wrap">
+        <div class="recommend-wrap">
+          <div class="recommend-term">추천 검색어</div>
+          <ul class="recommend-list">
+            <li class="li">인생향수 찾기</li>
+            <li class="li">the phone</li>
+            <li class="li">에어포스</li>
+            <li class="li">반팔 스투시</li>
+            <li class="li">아이앱 크롭</li>
+            <li class="li recommend_li_text">나이키 에어포스 화...</li>
+          </ul>
+        </div>
+
+        <div class="ranking-wrap">
+          <div class="ranking-term">
+            인기 검색어 <span class="time">07.31 14:00 기준</span>
+          </div>
+
+          <ol class="ranking-list">
+            <li class="li"><span class="list-index">1</span> 반스 베이프</li>
+            <li class="li">
+              <span class="list-index">2</span> 보메로
+              <sup class="sup">NEW</sup>
+            </li>
+            <li class="li"><span class="list-index">3</span> 알파</li>
+            <li class="li"><span class="list-index">4</span> 신발</li>
+            <li class="li"><span class="list-index">5</span> 알파플라이</li>
+            <li class="li">
+              <span class="list-index">6</span> 포터 <sup class="sup">NEW</sup>
+            </li>
+            <li class="li">
+              <span class="list-index">7</span> 알파플라이3
+              <sup class="sup">NEW</sup>
+            </li>
+            <li class="li"><span class="list-index">8</span> 아디다스 삼바</li>
+            <li class="li"><span class="list-index">9</span> 조던4</li>
+            <li class="li"><span class="list-index">10</span> 호카</li>
+            <li class="li"><span class="list-index">11</span> 향수</li>
+            <li class="li"><span class="list-index">12</span> 에이포스</li>
+            <li class="li"><span class="list-index">13</span> 휴먼메이드</li>
+            <li class="li"><span class="list-index">14</span> 컨버스</li>
+            <li class="li"><span class="list-index">15</span> 선글라스</li>
+            <li class="li"><span class="list-index">16</span> 젤카야노</li>
+            <li class="li"><span class="list-index">17</span> 킨</li>
+            <li class="li"><span class="list-index">18</span> 스페지알</li>
+            <li class="li"><span class="list-index">19</span> 폴로</li>
+            <li class="li"><span class="list-index">20</span> 조던</li>
+          </ol>
+        </div>
+
+        <div class="collabo-wrap">
+          <div class="collabo-title">인기 콜라보</div>
+          <ul class="collabo-list">
+            <li class="li">
+              <span class="list-index">1</span> 나이키 x 트래비스 스캇
+            </li>
+            <li class="li"><span class="list-index">4</span> 나이키 x 녹타</li>
+            <li class="li">
+              <span class="list-index">2</span> 조던 x 트래비스 스캇
+            </li>
+            <li class="li"><span class="list-index">5</span> 나이키 x 보디</li>
+            <li class="li">
+              <span class="list-index">3</span> T1 x DAVID AVLN
+            </li>
+            <li class="li">
+              <span class="list-index">6</span> 아이앱 스튜디오 x 요넥스
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/home_swipper.js"></script>
+    <script src="/js/recommend.js"></script>
+    <script src="/js/releases.js"></script>
+    <script src="/js/shortcut.js"></script>
+    <script src="/js/alert.js"></script>
+  </body>
+</html>

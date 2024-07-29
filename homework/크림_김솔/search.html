@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            /* border: 1px solid; */
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        input{
+            width: 770px;
+            height: 29px;
+            padding: 0px 13px 0px 1px;
+            border: none;
+            font-size: 20px;
+        }
+
+        input::placeholder{
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+        strong{
+            display: block;
+            font-size: 16px;
+            height: 19px;
+            margin: 0px 0px 12px;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        li{
+            display: block;
+            width: 392.8px;
+            height: 17px;
+            padding: 4px 0px 16px;
+        }
+
+        span{
+            font-size: 13px;
+            color: #222222CC;
+            font-weight: lighter;
+        }
+
+        sup{
+            font-size: 10px;
+            color: red;
+        }
+
+        
+        /* header css */
+        header{
+            /* background-color: yellow; */
+            width: 100%;
+            height: 48px;
+            padding: 50px 0px 0px;
+
+            position: relative;
+        }
+
+        a{
+            font-size: 25px;
+            text-decoration: none;
+            color: #222222CC;
+
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        .search{
+            /* background-color: yellow; */
+            margin: 0 auto;
+            width: 800px;
+           height: 29px;
+           padding: 0px 0px 16px;
+           border-bottom: 3px solid;
+
+           position: relative;
+        }
+
+        .search_delete{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            
+            background-color: #EBEBEB;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            justify-content: center;
+            font-size: 18px;
+            color: #414141cc;
+            cursor: pointer;
+            display: none;
+        }
+
+
+        /* main css */
+        main{
+            /* background-color: yellow; */
+            width: 814px;
+            height: 800px;
+            margin: 0 auto;
+        }
+
+        .recommend{
+            /* background-color: yellow; */
+            height: 75px;
+            padding: 20px 0px 40px;
+            margin: 0 auto;
+        }
+
+        .recommend>ul{
+            display: flex;
+        }
+
+        .recommend>ul>li{
+            display: block;
+            width: 100.66px;
+            height: 13px;
+            line-height: 13px;
+            background-color: #F4F4F4;
+            margin: 0px 8px 12px 0px;
+            padding: 8px 12px;
+            color: #222222CC;
+            text-align: center;
+            border-radius: 13px;
+        }
+
+        #recommend_li_text{
+            width: 140px
+        }
+
+        .ranking{
+            /* background-color: yellow; */
+            height: 401.2px;
+            padding: 0px 0px 40px;
+        }
+
+        .ranking>ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .collabo{
+            /* background-color: yellow; */
+            height: 142.2px;
+            padding: 0px 0px 40px;
+        }
+
+        .collabo>ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="search">
+            <input type="text" id="search" placeholder="브랜드, 상품, 프로필, 태그 등">
+            <button class="search_delete" onclick="clearSearch()">x</button>
+        </div>
+        <!-- 홈페이지로 이동 -->
+        <div><a href="#">X</a></div>
+    </header>
+
+    <main>
+        <div class="recommend">
+            <strong>추천 검색어</strong>
+            <ul>
+                <li>인생향수 찾기</li>
+                <li>the phone</li>
+                <li>에어포스</li>
+                <li>반팔 스투시</li>
+                <li>아이앱 크롭</li>
+                <li id="recommend_li_text">나이키 에어포스 화...</li>
+            </ul>
+
+        </div>
+
+        <div class="ranking">
+            <strong>인기 검색어 <span>07.31 14:00 기준</span> </strong> 
+            <ul>
+                <li> <b>1</b> 반스 베이프</li>
+                <li> <b>11</b> 보메로 <sup>NEW</sup></li>
+                <li> <b>2</b> 알파</li>
+                <li> <b>12</b> 신발 </li>
+                <li> <b>3</b> 알파플라이</li>
+                <li> <b>13</b> 포터 <sup>NEW</sup></li>
+                <li> <b>4</b> 알파플라이3 <sup>NEW</sup></li>
+                <li> <b>14</b> 아디다스 삼바</li>
+                <li> <b>5</b> 조던4</li>
+                <li> <b>15</b> 호카</li>
+                <li> <b>6</b> 향수</li>
+                <li> <b>16</b> 에이포스</li>
+                <li> <b>7</b> 휴먼메이드</li>
+                <li> <b>17</b> 컨버스</li>
+                <li> <b>8</b> 선글라스</li>
+                <li> <b>18</b> 젤카야노</li>
+                <li> <b>9</b> 킨</li>
+                <li> <b>19</b> 스페지알</li>
+                <li> <b>10</b> 폴로</li>
+                <li> <b>20</b> 조던</li>
+            </ul>
+        </div>
+
+        <div class="collabo">
+            <strong>인기 콜라보</strong>
+            <ul>
+                <li> <b>1</b> 나이키 x 트래비스 스캇</li>
+                <li> <b>4</b> 나이키 x 녹타 </li>
+                <li> <b>2</b> 조던 x 트래비스 스캇</li>
+                <li> <b>5</b> 나이키 x 보디</li>
+                <li> <b>3</b> T1 x DAVID AVLN</li>
+                <li> <b>6</b> 아이앱 스튜디오 x 요넥스</li>
+            </ul>
+            
+        </div>
+
+        
+        <script>
+            const searchInput = document.getElementById('search');
+            const mainContent = document.querySelector('main');
+            const searchDelete = document.querySelector('.search_delete');
+    
+            searchInput.addEventListener('input', function() {
+                if (this.value.length > 0) { // input에 텍스트가 있는 경우
+                    mainContent.style.display = 'none'; // <main> 숨기기
+                    searchDelete.style.display = 'flex'; // 삭제 버튼 표시
+                } else {
+                    mainContent.style.display = 'block'; // <main> 표시
+                    searchDelete.style.display = 'none'; // 삭제 버튼 숨기기
+                }
+            });
+    
+            function clearSearch() {
+                searchInput.value = '';
+                mainContent.style.display = 'block'; // <main> 표시
+                searchDelete.style.display = 'none'; // 삭제 버튼 숨기기
+            }
+            
+        
+        </script>
+
+    </main>
+</body>
+</html>

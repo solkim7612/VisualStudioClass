@@ -222,36 +222,38 @@
 
 
     <script>
+        // 이메일 유효성 검사
        function validateEmail() {
             const emailInput = document.getElementById('email');
             const email = emailInput.value;
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  //정규표현식
             const errorId=document.getElementById("errorId")
 
-            if (!emailPattern.test(email)) {
-                errorId.textContent= '이메일 주소를 정확히 입력해주세요.';
+            if (!emailPattern.test(email)) { // 이메일이 정규표현식과 일치하지 않으면
+                errorId.textContent= '이메일 주소를 정확히 입력해주세요.'; // 오류 메시지 설정
                 errorId.style.color="red";
                 emailInput.style.borderBottom = '1px solid red';
                 return false;
             } else {
-                errorId.textContent = '';
+                errorId.textContent = ''; // 오류 메시지 제거
                 emailInput.style.borderBottom = '1px solid #EBEBEB';
                 return true;
             }
         }
 
-        function validatePassword() {
+        // 비밀번호 유효성 검사
+        function validatePassword() { 
             const passwordInput = document.getElementById('password');
             const password = passwordInput.value;
             const errorPw=document.getElementById("errorPw")
 
-            if (password.length < 8) {
-                errorPw.textContent='비밀번호는 8자 이상이어야 합니다.';
+            if (password.length < 8) {  // 비밀번호 길이가 8자 미만이면
+                errorPw.textContent='비밀번호는 8자 이상이어야 합니다.'; // 오류 메시지 설정
                 errorPw.style.color="red";
                 passwordInput.style.borderBottom = '1px solid red';
                 return false;
             } else {
-                errorPw.textContent = '';
+                errorPw.textContent = ''; // 오류 메시지 제거
                 passwordInput.style.borderBottom = '1px solid #EBEBEB';
                 return true;
             }
@@ -264,11 +266,12 @@
             
         });
 
+        // 로그인 버튼 클릭 시 유효성 검사
         function handleLogin() {
             const loginValidateEmail = validateEmail();
             const logunValidatePassword = validatePassword();
 
-            if (loginValidateEmail && logunValidatePassword) {
+            if (loginValidateEmail && logunValidatePassword) { // 이메일과 비밀번호가 모두 유효하면
                 // 로그인 성공 시
                 console.log('로그인 성공');
                 alert('로그인 성공');
@@ -320,7 +323,7 @@
                     <li><a href="">SHOP</a></li>
                   </ul>
                 </nav>
-                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                <a href="search.html"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
               </div>
             </div>
           </div>
@@ -333,7 +336,7 @@
         <div class="login">
 
             <div class="login_title">
-                <img src="../크림/images/크림로고.png" alt="크림" width="250px" height="56px">
+                <img src="../크림_김솔/images/크림로고.png" alt="크림로고" width="250px" height="56px">
             </div>
 
             <div class="login_id">
@@ -362,11 +365,11 @@
 
             <div class="login_etc">
                 <button>
-                    <img src="../크림/images/네이버로고.png" alt="네이버" width="20px">
+                    <img src="../크림_김솔/images/네이버로고.png" alt="네이버로고" width="20px">
                     <a href="#">네이버로 로그인</a>
                 </button>
                 <button>
-                    <img src="../크림/images/애플로고.png" alt="애플" width="20px">
+                    <img src="../크림_김솔/images/애플로고.png" alt="애플로고" width="20px">
                     <a href="#">Apple로 로그인</a>
                 </button>
             </div>
@@ -419,9 +422,9 @@
                 </div>
 
                 <div class="footer_bottom_sns">
-                    <img src="../크림/images/인스타그램로고.png" alt="인스타" width="24px" height="24px">
-                    <img src="../크림/images/페이스북로고.png" alt="페북" width="20px" height="20px">
-                    <img src="../크림/images/카카오톡로고.png" alt="카톡" width="21pxpx" height="21.98px">
+                    <img src="../크림_김솔/images/인스타그램로고.png" alt="인스타로고" width="24px" height="24px">
+                    <img src="../크림_김솔/images/페이스북로고.png" alt="페이스북로고" width="20px" height="20px">
+                    <img src="../크림_김솔/images/카카오톡로고.png" alt="카카오톡로고" width="21pxpx" height="21.98px">
                 </div>
 
             </div>

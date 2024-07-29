@@ -1,0 +1,106 @@
+* {
+  font-family: "Pretendard-Regular";
+}
+
+.recommend-card-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: 160px;
+  margin-bottom: 56px;
+}
+
+.recommend-card-wrap {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 400%; /* 네 페이지를 보여줄 충분한 너비 확보 */
+}
+
+.recommend-card-flex-wrap {
+  display: flex;
+  width: 25%; /* 각 페이지의 너비를 25%로 설정 */
+}
+
+.column-wrap {
+  flex: 0 0 20%; /* 페이지당 5개의 컬럼 */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.column-wrap a {
+  display: block; /* a 태그를 블록 요소로 변경 */
+}
+
+.column-wrap a:nth-of-type(2) {
+  margin-top: 16px;
+}
+
+.card-wrap {
+  background-color: #fff;
+  border-radius: 9px;
+  text-align: center;
+}
+
+.card-img img {
+  max-width: 227px;
+  height: 100px;
+  border-radius: 9px;
+}
+
+.card-title {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #222;
+}
+
+.pagination-controls {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-controls button {
+  border: none;
+  background-color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.pagination-controls button img {
+  width: 24px;
+  height: 24px;
+}
+
+.pagination-controls button.disabled img {
+  opacity: 0.1;
+}
+
+.page {
+  display: flex;
+  gap: 8px;
+}
+
+.page .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  transition:
+    width 0.3s ease,
+    border-radius 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.page .dot.active {
+  background-color: #000;
+  width: 40px;
+  border-radius: 5px;
+}
