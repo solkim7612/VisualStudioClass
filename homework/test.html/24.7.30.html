@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 입력 o 반환 o
+
+        // 예시1
+        function add(a,b){
+            return a+b;
+        }
+
+        //return=output
+
+        // let sum=add(3,5);
+        // console.log(sum);
+
+        // 예시2
+        function average(a,b,c){
+            if(a <=0 || b<=0 || c<=0 ){
+
+                return;
+            }
+            return (a+b+c)/3;
+        }
+
+        let a=parseInt(prompt("국어 점수를 입력해주세요"));
+        let b=parseInt(prompt("영어 점수를 입력해주세요"));
+        let c=parseInt(prompt("수학 점수는 입력해주세요"));
+
+        // let score=average(a,b,c);
+        // console.log(score);
+
+        // 예시3
+        let students=[
+        {name: "a", scores: [30,50,50]},
+        {name: "b", scores: [60,90,70]},
+        {name: "c", scores: [90,80,100]}
+        ];   
+
+        function totalAverage(scores){
+            let total=0;
+            for(let score of scores){
+                total+=score;
+            } return total/scores.length;
+        };
+
+        function totalGrade(average){
+            if(average>=90){
+                return "A";
+            }else if(average>=65){
+                return "B";
+            }else{return "F";}
+        }
+
+        function test(students){
+            for(let student of students){
+                let average=totalAverage(student.scores);
+                let grade=totalGrade(average);
+                console.log(`${student.name}의 학점은 ${grade}`);
+            }
+        }
+
+        test(students);
+
+
+        
+
+
+        
+
+    </script>
+</body>
+</html>
